@@ -16,13 +16,13 @@ msgstr ""
 "Domain: comuneimola.compensi\n"
 
 msgid "AT Compensi"
-msgstr "Compensi"
+msgstr ""
 
 msgid "Archetpes that allow to handle compensation"
-msgstr "Archetype per la gestione dei compensi"
+msgstr ""
 
 msgid "Compenso View"
-msgstr "Vista compenso"
+msgstr ""
 
 msgid "Area Compensi View"
-msgstr "Vista area compensi"
+msgstr ""

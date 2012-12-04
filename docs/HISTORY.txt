@@ -4,5 +4,6 @@ Changelog
 1.0.dev0 (unreleased)
 ---------------------
 
+- traduzioni italiane [mirco&lucabel]
 - aggiunto l'archetype Compenso e la relativa vista [mirco]
 - Initial release

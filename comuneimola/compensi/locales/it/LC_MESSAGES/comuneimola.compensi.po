@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-12-04 13:16+0000\n"
+"POT-Creation-Date: 2012-12-04 13:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,15 +12,14 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: DOMAIN\n"
+"Domain: comuneimola.compensi\n"
 
-#: ./content/atcompenso.py:112
+#: ./content/atcompenso.py:119
 msgid "-- not specified --"
-msgstr ""
+msgstr "-- non specificato --"
 
-#. Default: "Compensi"
 msgid "AT Compensi"
-msgstr "Gestione compensi"
+msgstr "Compenso"
 
 #: ./profiles/default/types/ATCompenso.xml
 msgid "AT Compenso"
@@ -28,66 +27,52 @@ msgstr "Compenso"
 
 #: ./profiles/default/types/ATAreaCompensi.xml
 msgid "ATAreaCompensi"
-msgstr "Area compensi"
+msgstr "Area Compensi"
 
 #: ./profiles/default/types/ATCompenso.xml
 msgid "ATCompenso"
 msgstr "Compenso"
 
-#. Default: "Archetype per la gestione dei compensi"
 msgid "Archetpes that allow to handle compensation"
-msgstr "Archetype per la gestione dei compensi"
+msgstr "Archetype che permette di gestire un compenso"
 
-#. Default: "Vista area compensi"
 msgid "Area Compensi View"
 msgstr "Vista per l'area compensi"
 
-#: ./profiles/default/types/ATAreaCompensi.xml
-msgid "Compensi Area"
-msgstr "Area compensi"
-
-#. Default: "Vista compenso"
 msgid "Compenso View"
 msgstr "Vista per i compensi"
 
-#: ./browser/vistacompensoview.py:40
-msgid "a dummy string"
-msgstr ""
+#: ./browser/vistacompensoview.pt:10
+msgid "Fiscal data"
+msgstr "Dati fiscali"
 
-#. Default: "Insert the amount of remuneration"
+#: ./browser/vistacompensoview.pt:49
+msgid "Publication date"
+msgstr "Data di pubblicazione"
+
+#. Default: "Insert the amount of remuneration (the amount is meant in Euro)"
 #: ./content/atcompenso.py:29
 msgid "amount_help"
-msgstr ""
+msgstr "Inserire l'importo (la cifra si intende in Euro)"
 
 #. Default: "Amount"
+#: ./browser/vistaareacompensiview.pt:64
+#: ./browser/vistacompensoview.pt:16
 #: ./content/atcompenso.py:28
 msgid "amount_label"
-msgstr ""
+msgstr "Importo"
 
 #. Default: "Select the award procedures"
 #: ./content/atcompenso.py:68
 msgid "award_procedures_help"
-msgstr ""
-
-#. Default: "Procedures for the award"
-#: ./content/atcompenso.py:67
-msgid "award_procedures_label"
-msgstr ""
-
-#. Default: "Amount"
-#: ./browser/vistaareacompensiview.pt:64
-msgid "compenso_amount"
-msgstr "Importo (€)"
+msgstr "Selezionare la modalità di affidamento"
 
 #. Default: "Procedures for the award"
 #: ./browser/vistaareacompensiview.pt:66
-msgid "compenso_award_procedures"
+#: ./browser/vistacompensoview.pt:41
+#: ./content/atareacompensi.py:27
+msgid "award_procedures_label"
 msgstr "Modalità di affidamento"
-
-#. Default: "Office"
-#: ./browser/vistaareacompensiview.pt:65
-msgid "compenso_office"
-msgstr "Ufficio"
 
 #. Default: "Pubblication Date"
 #: ./browser/vistaareacompensiview.pt:67
@@ -99,50 +84,54 @@ msgstr "Data di pubblicazione"
 msgid "compenso_title"
 msgstr "Nome dell'impresa"
 
+#. Default: "If you set this date the item will be visible starting from this date. If you do not insert the date the item will be published immediately with the action of publication."
+#: ./content/atcompenso.py:86
+msgid "effectiveDate_help"
+msgstr "Se si imposta questa data l'elemento sarà visibile a partire da questa data. Se non viene inserita alcuna data l'elemento verrà pubblicato da subito con l'azione di pubblicazione."
+
 #. Default: "CSV Export"
 #: ./browser/vistaareacompensiview.pt:53
 msgid "export_csv_label"
-msgstr "Esporta dei dati (CSV)"
+msgstr "Esportazione dei dati (CSV)"
 
 #. Default: "Insert your tax code or your VAT number"
 #: ./content/atcompenso.py:20
 msgid "fiscal_data_help"
-msgstr ""
+msgstr "Inserisci il tuo codice fiscale o la partita IVA"
 
 #. Default: "Tax code or VAT number"
 #: ./content/atcompenso.py:19
 msgid "fiscal_data_label"
-msgstr ""
-
-#. Default: "Name of the enterprise"
-#: ./content/atcompenso.py:84
-msgid "label_title"
-msgstr ""
+msgstr "Codice fiscale o partita IVA"
 
 #. Default: "Insert a short text to describe the norm. (max 60 characters)"
 #: ./content/atcompenso.py:39
 msgid "norm_help"
-msgstr ""
+msgstr "Inserire un breve testo per descrivere la norma. (massimo 60 caratteri)"
 
 #. Default: "Norm"
+#: ./browser/vistacompensoview.pt:23
 #: ./content/atcompenso.py:38
 msgid "norm_label"
-msgstr ""
+msgstr "Norma"
 
 #. Default: "Note"
+#: ./browser/vistacompensoview.pt:59
 #: ./content/atcompenso.py:76
 msgid "note_label"
-msgstr ""
+msgstr "Note"
 
 #. Default: "Select the office responsible"
 #: ./content/atcompenso.py:50
 msgid "office_help"
-msgstr ""
+msgstr "Selezionare l'ufficio responsabile"
 
 #. Default: "Office"
+#: ./browser/vistaareacompensiview.pt:65
+#: ./browser/vistacompensoview.pt:29
 #: ./content/atcompenso.py:49
 msgid "office_label"
-msgstr ""
+msgstr "Ufficio"
 
 #. Default: "Office List"
 #: ./content/atareacompensi.py:18
@@ -152,25 +141,26 @@ msgstr "Lista degli uffici"
 #. Default: "List here offices for current area"
 #: ./content/atareacompensi.py:20
 msgid "office_list_description"
-msgstr "Scrivi, uno per riga, gli uffici dell'area"
+msgstr "Elencare qui gli uffici per l'area corrente"
 
-#. Default: "Relied modality"
-#: ./content/atareacompensi.py:27
-msgid "relied_modality"
-msgstr "Modalità di affidamento"
-
-#. Default: "List here relied modality"
+#. Default: "List here the procedures for the award"
 #: ./content/atareacompensi.py:29
 msgid "relied_modality_description"
-msgstr "Scrivi, una per riga, le modalità di affidamento"
+msgstr "Elencare qui le modalità di affidamento"
 
 #. Default: "Specify the name of the charge of the procedure"
 #: ./content/atcompenso.py:58
 msgid "responsible_help"
-msgstr ""
+msgstr "Specificare il nome del responsabile del procedimento"
 
 #. Default: "Charge of the procedure"
+#: ./browser/vistacompensoview.pt:35
 #: ./content/atcompenso.py:57
 msgid "responsible_label"
-msgstr ""
+msgstr "Responsabile del procedimento"
+
+#. Default: "Name of the enterprise"
+#: ./content/atcompenso.py:84
+msgid "title_label"
+msgstr "Nome dell'impresa"
 

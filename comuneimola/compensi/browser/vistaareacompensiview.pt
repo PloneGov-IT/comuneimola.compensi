@@ -61,9 +61,9 @@
                 <thead>
                     <tr>
                        <th i18n:translate="compenso_title">Title</th>
-                       <th i18n:translate="compenso_amount">Amount</th>
-                       <th i18n:translate="compenso_office">Office</th>
-                       <th i18n:translate="compenso_award_procedures">Procedures for the award</th>
+                       <th><span tal:omit-tag="" i18n:translate="amount_label">Amount</span> (&euro;)</th>
+                       <th i18n:translate="office_label">Office</th>
+                       <th i18n:translate="award_procedures_label">Procedures for the award</th>
                        <th i18n:translate="compenso_pubbl">Pubblication Date</th>
                     </tr>
                 </thead>

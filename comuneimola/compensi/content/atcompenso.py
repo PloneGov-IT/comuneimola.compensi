@@ -26,7 +26,7 @@ ATCompensoSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         required=True,
         widget = atapi.StringWidget(
             label=_(u'amount_label', default=u'Amount'),
-            description=_(u'amount_help', default=u"Insert the amount of remuneration"),
+            description=_(u'amount_help', default=u"Insert the amount of remuneration (the amount is meant in Euro)"),
             size=40,
             ),
     ),

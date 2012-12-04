@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: comuneimola.compensi 1.0\n"
-"POT-Creation-Date: 2012-12-04 13:16+0000\n"
+"POT-Creation-Date: 2012-12-04 13:42+0000\n"
 "PO-Revision-Date: 2012-10-03 16:39 +0200\n"
 "Last-Translator: lucabel <luca.bellenghi@redturtle.it>\n"
 "Language-Team: Plone NL <plone-nl@lists.plone.org>\n"
@@ -15,11 +15,10 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: comuneimola.compensi\n"
 
-#: ./content/atcompenso.py:112
+#: ./content/atcompenso.py:119
 msgid "-- not specified --"
 msgstr ""
 
-#. Default: "Compensi"
 msgid "AT Compensi"
 msgstr ""
 
@@ -35,32 +34,31 @@ msgstr ""
 msgid "ATCompenso"
 msgstr ""
 
-#. Default: "Archetype per la gestione dei compensi"
 msgid "Archetpes that allow to handle compensation"
 msgstr ""
 
-#. Default: "Vista area compensi"
 msgid "Area Compensi View"
 msgstr ""
 
-#: ./profiles/default/types/ATAreaCompensi.xml
-msgid "Compensi Area"
-msgstr ""
-
-#. Default: "Vista compenso"
 msgid "Compenso View"
 msgstr ""
 
-#: ./browser/vistacompensoview.py:40
-msgid "a dummy string"
+#: ./browser/vistacompensoview.pt:10
+msgid "Fiscal data"
 msgstr ""
 
-#. Default: "Insert the amount of remuneration"
+#: ./browser/vistacompensoview.pt:49
+msgid "Publication date"
+msgstr ""
+
+#. Default: "Insert the amount of remuneration (the amount is meant in Euro)"
 #: ./content/atcompenso.py:29
 msgid "amount_help"
 msgstr ""
 
 #. Default: "Amount"
+#: ./browser/vistaareacompensiview.pt:64
+#: ./browser/vistacompensoview.pt:16
 #: ./content/atcompenso.py:28
 msgid "amount_label"
 msgstr ""
@@ -71,23 +69,10 @@ msgid "award_procedures_help"
 msgstr ""
 
 #. Default: "Procedures for the award"
-#: ./content/atcompenso.py:67
-msgid "award_procedures_label"
-msgstr ""
-
-#. Default: "Amount"
-#: ./browser/vistaareacompensiview.pt:64
-msgid "compenso_amount"
-msgstr ""
-
-#. Default: "Procedures for the award"
 #: ./browser/vistaareacompensiview.pt:66
-msgid "compenso_award_procedures"
-msgstr ""
-
-#. Default: "Office"
-#: ./browser/vistaareacompensiview.pt:65
-msgid "compenso_office"
+#: ./browser/vistacompensoview.pt:41
+#: ./content/atareacompensi.py:27
+msgid "award_procedures_label"
 msgstr ""
 
 #. Default: "Pubblication Date"
@@ -98,6 +83,11 @@ msgstr ""
 #. Default: "Title"
 #: ./browser/vistaareacompensiview.pt:63
 msgid "compenso_title"
+msgstr ""
+
+#. Default: "If you set this date the item will be visible starting from this date. If you do not insert the date the item will be published immediately with the action of publication."
+#: ./content/atcompenso.py:86
+msgid "effectiveDate_help"
 msgstr ""
 
 #. Default: "CSV Export"
@@ -115,22 +105,19 @@ msgstr ""
 msgid "fiscal_data_label"
 msgstr ""
 
-#. Default: "Name of the enterprise"
-#: ./content/atcompenso.py:84
-msgid "label_title"
-msgstr ""
-
 #. Default: "Insert a short text to describe the norm. (max 60 characters)"
 #: ./content/atcompenso.py:39
 msgid "norm_help"
 msgstr ""
 
 #. Default: "Norm"
+#: ./browser/vistacompensoview.pt:23
 #: ./content/atcompenso.py:38
 msgid "norm_label"
 msgstr ""
 
 #. Default: "Note"
+#: ./browser/vistacompensoview.pt:59
 #: ./content/atcompenso.py:76
 msgid "note_label"
 msgstr ""
@@ -141,6 +128,8 @@ msgid "office_help"
 msgstr ""
 
 #. Default: "Office"
+#: ./browser/vistaareacompensiview.pt:65
+#: ./browser/vistacompensoview.pt:29
 #: ./content/atcompenso.py:49
 msgid "office_label"
 msgstr ""
@@ -155,12 +144,7 @@ msgstr ""
 msgid "office_list_description"
 msgstr ""
 
-#. Default: "Relied modality"
-#: ./content/atareacompensi.py:27
-msgid "relied_modality"
-msgstr ""
-
-#. Default: "List here relied modality"
+#. Default: "List here the procedures for the award"
 #: ./content/atareacompensi.py:29
 msgid "relied_modality_description"
 msgstr ""
@@ -171,7 +155,13 @@ msgid "responsible_help"
 msgstr ""
 
 #. Default: "Charge of the procedure"
+#: ./browser/vistacompensoview.pt:35
 #: ./content/atcompenso.py:57
 msgid "responsible_label"
+msgstr ""
+
+#. Default: "Name of the enterprise"
+#: ./content/atcompenso.py:84
+msgid "title_label"
 msgstr ""
 

@@ -2,6 +2,10 @@
 /*
  * Vista per AT Compensi
  */
-.effectiveDateField div {
+.compensoField .effectiveDateField div {
 	float: left;
+}
+
+.compensoField {
+
 }

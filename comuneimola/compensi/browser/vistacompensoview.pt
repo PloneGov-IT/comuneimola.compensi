@@ -6,32 +6,32 @@
 
     <metal:content-core fill-slot="content-core">
         <metal:content-core define-macro="content-core">
-            <div tal:condition="here/getFiscal_data">
+            <div class="compensoField" tal:condition="here/getFiscal_data">
                 <label><span tal:omit-tag="" i18n:translate="">Fiscal data</span>:</label>
                 <metal:field use-macro="python:context.widget('fiscal_data', mode='view')">
                     Body text
                 </metal:field>
             </div>
-            <div>
+            <div class="compensoField">
                 <label><span tal:omit-tag="" i18n:translate="amount_label">Amount</span>:</label>
                 <metal:field use-macro="python:context.widget('amount', mode='view')">
                     Body text
                 </metal:field>
                 &euro;
             </div>
-            <div>
+            <div class="compensoField">
                 <label><span tal:omit-tag="" i18n:translate="norm_label">Norm</span>:</label>
                 <metal:field use-macro="python:context.widget('norm', mode='view')">
                     Body text
                 </metal:field>
             </div>
-            <div>
+            <div class="compensoField">
                 <label><span tal:omit-tag="" i18n:translate="office_label">Office</span>:</label>
                 <metal:field use-macro="python:context.widget('office', mode='view')">
                     Body text
                 </metal:field>
             </div>
-            <div>
+            <div class="compensoField">
                 <label><span tal:omit-tag="" i18n:translate="responsible_label">Charge of the procedure</span>:</label>
                 <metal:field use-macro="python:context.widget('responsible', mode='view')">
                     Body text
@@ -43,7 +43,7 @@
                     Body text
                 </metal:field>
             </div>
-            <div tal:condition="here/getEffectiveDate">
+            <div class="compensoField" tal:condition="here/getEffectiveDate">
                 <div class="effectiveDateField">
                     <div>
                         <label><span tal:omit-tag="" i18n:translate="">Publication date</span>:</label>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="visualClear"><!-- --></div>
             </div>
-            <div tal:condition="here/getNote">
+            <div class="compensoField" tal:condition="here/getNote">
                 <label><span tal:omit-tag="" i18n:translate="note_label">Note</span>:</label>
                 <br />
                 <metal:field use-macro="python:context.widget('note', mode='view')">
