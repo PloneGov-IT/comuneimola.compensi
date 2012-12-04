@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="comuneimola.compensi">
+
+  <browser:page
+      for="comuneimola.compensi.interfaces.atareacompensi.IATAreaCompensi"
+      name="csv_export"
+      class=".export_documents.CsvExport"
+      allowed_interface=".export_documents.ICsvExport"
+      permission="zope.Public"
+      />
+
+</configure>

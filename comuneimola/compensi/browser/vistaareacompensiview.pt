@@ -41,15 +41,29 @@
 </metal:slot>
 
 <body>
-    <div metal:fill-slot="main">
+    <div metal:fill-slot="main"
+         class="areaCompensi">
         <tal:main-macro metal:define-macro="main"
                         tal:define="brains view/contenuti_folder;
                                     toLocalizedTime nocall:context/@@plone/toLocalizedTime;">
+
+            <h1 tal:content="here/Title" class="documentFirstHeading"/>
+
+            <div id="export_csv">
+                <a class="context"
+                   i18n:translate="export_csv_label"
+                   tal:attributes="href string:${here/absolute_url}/@@csv_export">
+                   CSV Export
+                 </a>
+            </div>
+
             <table id='compensitable' class="">
                 <thead>
                     <tr>
                        <th i18n:translate="compenso_title">Title</th>
-                       <th i18n:translate="compenso_descr">Description</th>
+                       <th i18n:translate="compenso_amount">Amount</th>
+                       <th i18n:translate="compenso_office">Office</th>
+                       <th i18n:translate="compenso_award_procedures">Procedures for the award</th>
                        <th i18n:translate="compenso_pubbl">Pubblication Date</th>
                     </tr>
                 </thead>
@@ -61,7 +75,9 @@
                                 <tal:title content="brain/Title"></tal:title>
                               </a>
                            </td>
-                           <td tal:content="brain/Description"></td>
+                           <td tal:content="brain/getAmount">Amount</td>
+                           <td tal:content="brain/getOffice">Office</td>
+                           <td tal:content="brain/getAward_procedures">Procedures for the award</td>
                            <td tal:define="effective_date brain/effective;
                                            is_valid_date python: effective_date.year() > 1900">
                                <tal:date tal:condition="is_valid_date"

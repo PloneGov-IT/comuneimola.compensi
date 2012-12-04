@@ -27,6 +27,8 @@ jq(document).ready(function() {
         "aoColumns": [
             null,
             null,
+            null,
+            null,
             {"sType": "date-ita"},
           ]
    });

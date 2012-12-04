@@ -11,6 +11,9 @@ class IVistaareacompensiView(Interface):
     def contenuti_folder():
         """ test method"""
 
+    def show_export_button():
+        """ policy to decide how can see the button"""
+
 
 class vistaareacompensiView(BrowserView):
     """
@@ -31,3 +34,9 @@ class vistaareacompensiView(BrowserView):
         query = {'path': {'query': path, 'depth': 1}}
         brains = self.portal_catalog(**query)
         return brains
+
+    def show_export_button(self):
+        """
+        Right now, everybody can see it
+        """
+        return True
