@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-12-04 13:42+0000\n"
+"POT-Creation-Date: 2012-12-04 14:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,14 +39,18 @@ msgstr "Archetype che permette di gestire un compenso"
 msgid "Area Compensi View"
 msgstr "Vista per l'area compensi"
 
+#: ./browser/vistacompensoview.pt:75
+msgid "Attachments"
+msgstr "Allegati"
+
 msgid "Compenso View"
 msgstr "Vista per i compensi"
 
-#: ./browser/vistacompensoview.pt:10
+#: ./browser/vistacompensoview.pt:17
 msgid "Fiscal data"
 msgstr "Dati fiscali"
 
-#: ./browser/vistacompensoview.pt:49
+#: ./browser/vistacompensoview.pt:56
 msgid "Publication date"
 msgstr "Data di pubblicazione"
 
@@ -57,7 +61,7 @@ msgstr "Inserire l'importo (la cifra si intende in Euro)"
 
 #. Default: "Amount"
 #: ./browser/vistaareacompensiview.pt:64
-#: ./browser/vistacompensoview.pt:16
+#: ./browser/vistacompensoview.pt:23
 #: ./content/atcompenso.py:28
 msgid "amount_label"
 msgstr "Importo"
@@ -69,7 +73,7 @@ msgstr "Selezionare la modalità di affidamento"
 
 #. Default: "Procedures for the award"
 #: ./browser/vistaareacompensiview.pt:66
-#: ./browser/vistacompensoview.pt:41
+#: ./browser/vistacompensoview.pt:48
 #: ./content/atareacompensi.py:27
 msgid "award_procedures_label"
 msgstr "Modalità di affidamento"
@@ -110,13 +114,13 @@ msgid "norm_help"
 msgstr "Inserire un breve testo per descrivere la norma. (massimo 60 caratteri)"
 
 #. Default: "Norm"
-#: ./browser/vistacompensoview.pt:23
+#: ./browser/vistacompensoview.pt:30
 #: ./content/atcompenso.py:38
 msgid "norm_label"
 msgstr "Norma"
 
 #. Default: "Note"
-#: ./browser/vistacompensoview.pt:59
+#: ./browser/vistacompensoview.pt:66
 #: ./content/atcompenso.py:76
 msgid "note_label"
 msgstr "Note"
@@ -128,7 +132,7 @@ msgstr "Selezionare l'ufficio responsabile"
 
 #. Default: "Office"
 #: ./browser/vistaareacompensiview.pt:65
-#: ./browser/vistacompensoview.pt:29
+#: ./browser/vistacompensoview.pt:36
 #: ./content/atcompenso.py:49
 msgid "office_label"
 msgstr "Ufficio"
@@ -154,7 +158,7 @@ msgid "responsible_help"
 msgstr "Specificare il nome del responsabile del procedimento"
 
 #. Default: "Charge of the procedure"
-#: ./browser/vistacompensoview.pt:35
+#: ./browser/vistacompensoview.pt:42
 #: ./content/atcompenso.py:57
 msgid "responsible_label"
 msgstr "Responsabile del procedimento"

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: comuneimola.compensi 1.0\n"
-"POT-Creation-Date: 2012-12-04 13:42+0000\n"
+"POT-Creation-Date: 2012-12-04 14:22+0000\n"
 "PO-Revision-Date: 2012-10-03 16:39 +0200\n"
 "Last-Translator: lucabel <luca.bellenghi@redturtle.it>\n"
 "Language-Team: Plone NL <plone-nl@lists.plone.org>\n"
@@ -40,14 +40,18 @@ msgstr ""
 msgid "Area Compensi View"
 msgstr ""
 
+#: ./browser/vistacompensoview.pt:75
+msgid "Attachments"
+msgstr ""
+
 msgid "Compenso View"
 msgstr ""
 
-#: ./browser/vistacompensoview.pt:10
+#: ./browser/vistacompensoview.pt:17
 msgid "Fiscal data"
 msgstr ""
 
-#: ./browser/vistacompensoview.pt:49
+#: ./browser/vistacompensoview.pt:56
 msgid "Publication date"
 msgstr ""
 
@@ -58,7 +62,7 @@ msgstr ""
 
 #. Default: "Amount"
 #: ./browser/vistaareacompensiview.pt:64
-#: ./browser/vistacompensoview.pt:16
+#: ./browser/vistacompensoview.pt:23
 #: ./content/atcompenso.py:28
 msgid "amount_label"
 msgstr ""
@@ -70,7 +74,7 @@ msgstr ""
 
 #. Default: "Procedures for the award"
 #: ./browser/vistaareacompensiview.pt:66
-#: ./browser/vistacompensoview.pt:41
+#: ./browser/vistacompensoview.pt:48
 #: ./content/atareacompensi.py:27
 msgid "award_procedures_label"
 msgstr ""
@@ -111,13 +115,13 @@ msgid "norm_help"
 msgstr ""
 
 #. Default: "Norm"
-#: ./browser/vistacompensoview.pt:23
+#: ./browser/vistacompensoview.pt:30
 #: ./content/atcompenso.py:38
 msgid "norm_label"
 msgstr ""
 
 #. Default: "Note"
-#: ./browser/vistacompensoview.pt:59
+#: ./browser/vistacompensoview.pt:66
 #: ./content/atcompenso.py:76
 msgid "note_label"
 msgstr ""
@@ -129,7 +133,7 @@ msgstr ""
 
 #. Default: "Office"
 #: ./browser/vistaareacompensiview.pt:65
-#: ./browser/vistacompensoview.pt:29
+#: ./browser/vistacompensoview.pt:36
 #: ./content/atcompenso.py:49
 msgid "office_label"
 msgstr ""
@@ -155,7 +159,7 @@ msgid "responsible_help"
 msgstr ""
 
 #. Default: "Charge of the procedure"
-#: ./browser/vistacompensoview.pt:35
+#: ./browser/vistacompensoview.pt:42
 #: ./content/atcompenso.py:57
 msgid "responsible_label"
 msgstr ""

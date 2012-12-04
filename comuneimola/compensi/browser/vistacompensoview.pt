@@ -5,7 +5,14 @@
 <body>
 
     <metal:content-core fill-slot="content-core">
-        <metal:content-core define-macro="content-core">
+        <metal:content-core define-macro="content-core"
+                tal:define="portal_type python:context.getPortalTypeName().lower().replace(' ', '_');
+                base_macros context/base/macros;
+                view_template python:'%s_view' % portal_type;
+                view_macros python:path('context/%s/macros|nothing' % view_template);
+                folderlisting_macro view_macros/folderlisting | folderlisting | base_macros/folderlisting;
+                errors python:request.get('errors', {})">
+
             <div class="compensoField" tal:condition="here/getFiscal_data">
                 <label><span tal:omit-tag="" i18n:translate="">Fiscal data</span>:</label>
                 <metal:field use-macro="python:context.widget('fiscal_data', mode='view')">
@@ -37,7 +44,7 @@
                     Body text
                 </metal:field>
             </div>
-            <div>
+            <div class="compensoField">
                 <label><span tal:omit-tag="" i18n:translate="award_procedures_label">Procedures for the award</span>:</label>
                 <metal:field use-macro="python:context.widget('award_procedures', mode='view')">
                     Body text
@@ -62,6 +69,13 @@
                     Body text
                 </metal:field>
             </div>
+
+            <div class="compensoAttachments"
+                 tal:condition="context/values">
+                <h3 i18n:translate="">Attachments</h3>
+                <metal:use_body use-macro="folderlisting_macro" />
+            </div>
+
         </metal:content-core>
     </metal:content-core>
 
