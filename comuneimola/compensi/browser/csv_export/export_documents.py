@@ -83,7 +83,6 @@ class CsvExport(BrowserView):
 
         csvstream.flush()
         csvstream.close()
-        print csvpath
 
         streamed = EphemeralStreamIterator(csvpath, delete_parent=True,)
 
@@ -100,6 +99,9 @@ class CsvExport(BrowserView):
         addvalue = values.append
         for field in self.get_fields:
             value = element.getField(field).get(element)
+            if field == 'effectiveDate':
+                if value:
+                    value = value.strftime('%d/%m/%Y')
             if value:
                 addvalue(value)
             else:
