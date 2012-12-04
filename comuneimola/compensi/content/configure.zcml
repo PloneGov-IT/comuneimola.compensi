@@ -3,16 +3,16 @@
     xmlns:five="http://namespaces.zope.org/five"
     i18n_domain="comuneimola.compensi">
 
-  <class class=".atareacompensi.atareacompensi.ATAreaCompensi">
+  <class class=".atareacompensi.ATAreaCompensi">
     <require
         permission="zope2.View"
-        interface="..interfaces.IATAreaCompensi"
+        interface="..interfaces.atareacompensi.IATAreaCompensi"
         />
   </class>
-  <class class=".atcompenso.atcompenso.ATCompenso">
+  <class class=".atcompenso.ATCompenso">
     <require
         permission="zope2.View"
-        interface="..interfaces.IATCompenso"
+        interface="..interfaces.atcompenso.IATCompenso"
         />
   </class>
 
