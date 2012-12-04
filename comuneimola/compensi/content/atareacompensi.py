@@ -55,6 +55,4 @@ class ATAreaCompensi(folder.ATFolder):
     title = atapi.ATFieldProperty('title')
     description = atapi.ATFieldProperty('description')
 
-    # -*- Your ATSchema to Python Property Bridges Here ... -*-
-
 atapi.registerType(ATAreaCompensi, PROJECTNAME)
