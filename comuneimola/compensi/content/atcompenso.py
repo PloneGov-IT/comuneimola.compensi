@@ -81,8 +81,11 @@ ATCompensoSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 
 ))
 
-ATCompensoSchema['title'].widget.label = _(u'label_title',default=u'Name of the enterprise')
+ATCompensoSchema['title'].widget.label = _(u'title_label', default=u'Name of the enterprise')
 ATCompensoSchema['description'].widget.visible = False
+ATCompensoSchema['effectiveDate'].widget.description = _(u'effectiveDate_help', default=u'If you set this date the item will be visible starting from this date. If you do not insert the date the item will be published immediately with the action of publication.')
+ATCompensoSchema.changeSchemataForField('effectiveDate', 'default')
+ATCompensoSchema.moveField('effectiveDate', before='note')
 
 # Set storage on fields copied from ATFolderSchema, making sure
 # they work well with the python bridge properties.
@@ -94,6 +97,10 @@ schemata.finalizeATCTSchema(
     folderish=True,
     moveDiscussion=False
 )
+
+# finalizeATCTSchema moves 'effectiveDate' into 'dates', we move it back:
+ATCompensoSchema.changeSchemataForField('effectiveDate', 'default')
+ATCompensoSchema.moveField('effectiveDate', before='note')
 
 class ATCompenso(folder.ATFolder):
     """AT Compenso"""

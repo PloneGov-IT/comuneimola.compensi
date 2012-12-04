@@ -4,5 +4,5 @@ Changelog
 1.0.dev0 (unreleased)
 ---------------------
 
-- aggiunto l'archetype Compenso [mircos]
+- aggiunto l'archetype Compenso e la relativa vista [mirco]
 - Initial release

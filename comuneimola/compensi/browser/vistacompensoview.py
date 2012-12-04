@@ -3,8 +3,6 @@ from zope.interface import implements, Interface
 from Products.Five import BrowserView
 from Products.CMFCore.utils import getToolByName
 
-from comuneimola.compensi import compensiMessageFactory as _
-
 
 class IVistacompensiView(Interface):
     """
@@ -33,10 +31,3 @@ class vistacompensoView(BrowserView):
     def portal(self):
         return getToolByName(self.context, 'portal_url').getPortalObject()
 
-    def test(self):
-        """
-        test method
-        """
-        dummy = _(u'a dummy string')
-
-        return {'dummy': dummy}
