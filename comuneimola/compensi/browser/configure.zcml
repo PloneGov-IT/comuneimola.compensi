@@ -9,7 +9,7 @@
   <include package="plone.app.contentmenu" />
 
   <browser:page
-      for="..interfaces.IATCompenso"
+      for="..interfaces.atcompenso.IATCompenso"
       name="compenso_view"
       class=".vistacompensoview.vistacompensoView"
       template="vistacompensoview.pt"
@@ -19,7 +19,7 @@
 
 
   <browser:page
-      for="..interfaces.IATAreaCompensi"
+      for="..interfaces.atareacompensi.IATAreaCompensi"
       name="areacompensi_view"
       class=".vistaareacompensiview.vistaareacompensiView"
       template="vistaareacompensiview.pt"
@@ -28,13 +28,13 @@
       />
 
   <browser:menuItem
-      for="..interfaces.IATCompenso"
+      for="..interfaces.atcompenso.IATCompenso"
       menu="plone_displayviews"
       title="Compenso View"
       action="@@compenso_view" />
 
   <browser:menuItem
-      for="..interfaces.IATAreaCompensi"
+      for="..interfaces.atareacompensi.IATAreaCompensi"
       menu="plone_displayviews"
       title="Area Compensi View"
       action="@@areacompensi_view" />
