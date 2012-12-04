@@ -1,0 +1,57 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="comuneimola.compensi">
+
+  <include package="plone.app.contentmenu" />
+
+  <!-- -*- extra stuff goes here -*- -->
+  <include package="plone.app.contentmenu" />
+
+  <browser:page
+      for="..interfaces.IATCompenso"
+      name="compenso_view"
+      class=".vistacompensoview.vistacompensoView"
+      template="vistacompensoview.pt"
+      allowed_interface=".vistacompensoview.IVistacompensiView"
+      permission="zope.Public"
+      />
+
+
+  <browser:page
+      for="..interfaces.IATAreaCompensi"
+      name="areacompensi_view"
+      class=".vistaareacompensiview.vistaareacompensiView"
+      template="vistaareacompensiview.pt"
+      allowed_interface=".vistaareacompensiview.IVistaareacompensiView"
+      permission="zope.Public"
+      />
+
+  <browser:menuItem
+      for="..interfaces.IATCompenso"
+      menu="plone_displayviews"
+      title="Compenso View"
+      action="@@compenso_view" />
+
+  <browser:menuItem
+      for="..interfaces.IATAreaCompensi"
+      menu="plone_displayviews"
+      title="Area Compensi View"
+      action="@@areacompensi_view" />
+
+
+ <browser:resourceDirectory
+     name="comuneimola.compensi.javascript"
+     directory="javascript"
+     />
+
+ <browser:resourceDirectory
+     name="comuneimola.compensi.css"
+     directory="css"
+     />
+
+ <browser:resourceDirectory
+     name="comuneimola.compensi.images"
+     directory="images"
+     />
+</configure>

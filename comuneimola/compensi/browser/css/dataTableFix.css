@@ -1,0 +1,50 @@
+
+/*
+ * Table
+ */
+table.dataTable {
+	border-left: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+}
+
+table.dataTable thead th {
+	font-weight: bold;
+	cursor: pointer;
+	*cursor: hand;
+	text-align: left;
+	color: #666;
+	border: 0.1em solid #E7E7E7;
+	border-style: solid solid none;
+	background-color: #DDD;
+	padding: 0.5em 1em;
+	vertical-align: top;
+}
+
+table.dataTable tfoot th {
+	padding: 3px 18px 3px 10px;
+	/**border-top: 1px solid black;**/
+	font-weight: bold;
+}
+
+table.dataTable td {
+	border-right: 1px solid #DDD;
+}
+
+
+table.dataTable tr.odd { background-color: #EEE; }
+table.dataTable tr.even { background-color: white; }
+
+/*
+ * Page length menu
+ */
+.dataTables_length {
+	margin-bottom: 1em;
+}
+
+
+/*
+ * Filter
+ */
+.dataTables_filter {
+	margin-bottom: 1em;
+}

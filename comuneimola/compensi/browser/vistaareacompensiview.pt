@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="comuneimola.compensi">
+
+<tal:nothing tal:condition="nothing">
+    We decide to include js/css in this way, just cause as far as we know, datatables
+    are used only here.
+</tal:nothing>
+
+<tal:js metal:fill-slot="javascript_head_slot"
+        tal:define="portal context/@@plone_portal_state/portal">
+
+    <script type="text/javascript" 
+            tal:attributes="src string:${portal/absolute_url}/++resource++jquery.datatables.js">
+    </script>
+
+    <script type="text/javascript"
+            tal:attributes="src string:${portal/absolute_url}/++resource++comuneimola.compensi.javascript/areacompensi.js">
+    </script>
+
+</tal:js>
+
+<metal:slot fill-slot="style_slot"
+            tal:define="portal context/@@plone_portal_state/portal">
+
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          tal:attributes="href string:${portal/absolute_url}/++resource++jquery.datatables/media/css/jquery.dataTables.css">
+
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          tal:attributes="href string:${portal/absolute_url}/++resource++jquery.datatables/extras/TableTools/media/css/TableTools.css">
+
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          tal:attributes="href string:${portal/absolute_url}/++resource++comuneimola.compensi.css/dataTableFix.css">
+</metal:slot>
+
+<body>
+    <div metal:fill-slot="main">
+        <tal:main-macro metal:define-macro="main"
+                        tal:define="brains view/contenuti_folder;
+                                    toLocalizedTime nocall:context/@@plone/toLocalizedTime;">
+            <table id='compensitable' class="">
+                <thead>
+                    <tr>
+                       <th i18n:translate="compenso_title">Title</th>
+                       <th i18n:translate="compenso_descr">Description</th>
+                       <th i18n:translate="compenso_pubbl">Pubblication Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tal:items tal:repeat="brain brains">
+                       <tr>
+                           <td>
+                              <a tal:attributes="href brain/getURL">
+                                <tal:title content="brain/Title"></tal:title>
+                              </a>
+                           </td>
+                           <td tal:content="brain/Description"></td>
+                           <td tal:define="effective_date brain/effective;
+                                           is_valid_date python: effective_date.year() > 1900">
+                               <tal:date tal:condition="is_valid_date"
+                                   tal:content="python:context.toLocalizedTime(effective_date)"/>
+                            </td>
+                       </tr> 
+                   </tal:items>
+                </tbody>
+            </table>
+        </tal:main-macro>
+    </div>
+</body>
+</html>

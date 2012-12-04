@@ -1,0 +1,2 @@
+recursive-include comuneimola *
+global-exclude *pyc

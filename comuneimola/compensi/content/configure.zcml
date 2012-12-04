@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="comuneimola.compensi">
+
+  <class class=".atareacompensi.ATAreaCompensi">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IATAreaCompensi"
+        />
+  </class>
+  <class class=".atcompenso.ATCompenso">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IATCompenso"
+        />
+  </class>
+
+</configure>

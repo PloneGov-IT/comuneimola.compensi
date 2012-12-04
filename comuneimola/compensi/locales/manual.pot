@@ -1,0 +1,28 @@
+# Red Turtle <info@redturtle.it>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: comuneimola.compensi 1.0\n"
+"POT-Creation-Date: 2012-10-03 14:36+0000\n"
+"PO-Revision-Date: 2012-10-03 16:39 +0200\n"
+"Last-Translator: lucabel <luca.bellenghi@redturtle.it>\n"
+"Language-Team: Plone NL <plone-nl@lists.plone.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: it\n"
+"Language-Name: Italian\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: comuneimola.compensi\n"
+
+msgid "AT Compensi"
+msgstr "Compensi"
+
+msgid "Archetpes that allow to handle compensation"
+msgstr "Archetype per la gestione dei compensi"
+
+msgid "Compenso View"
+msgstr "Vista compenso"
+
+msgid "Area Compensi View"
+msgstr "Vista area compensi"
