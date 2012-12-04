@@ -21,15 +21,7 @@ jq(document).ready(function() {
 
     jq('#compensitable').dataTable({
         "sPaginationType": "full_numbers",
-        "oLanguage": {
-              "sUrl": "@@collective.js.datatables.translation"
-            },
-        "aoColumns": [
-            null,
-            null,
-            null,
-            null,
-            {"sType": "date-ita"},
-          ]
+        "oLanguage": {"sUrl": "@@collective.js.datatables.translation"},
+        "aoColumns": [null, null, null, null, {"sType": "date-ita"} ]
    });
 })
