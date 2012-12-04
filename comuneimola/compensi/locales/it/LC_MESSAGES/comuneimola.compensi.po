@@ -97,7 +97,7 @@ msgstr "Data di pubblicazione"
 #. Default: "Title"
 #: ./browser/vistaareacompensiview.pt:63
 msgid "compenso_title"
-msgstr "Titolo"
+msgstr "Nome dell'impresa"
 
 #. Default: "CSV Export"
 #: ./browser/vistaareacompensiview.pt:53
