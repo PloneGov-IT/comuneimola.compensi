@@ -7,7 +7,7 @@ from Products.Archetypes import atapi
 from Products.ATContentTypes.content import folder
 from Products.ATContentTypes.content import schemata
 
-from comuneimola.compensi.interfaces import IATAreaCompensi
+from comuneimola.compensi.interfaces.atareacompensi import IATAreaCompensi
 from comuneimola.compensi.config import PROJECTNAME
 from comuneimola.compensi import compensiMessageFactory as _
 
