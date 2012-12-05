@@ -21,6 +21,7 @@
 	cursor: pointer;
 	color: #333 !important;
 	background-image: url();
+	text-decoration: none;
 }
 .areaCompensi div#export_csv a.context:hover{
 	color: #75AD0A !important;

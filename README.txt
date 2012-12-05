@@ -1,17 +1,54 @@
-.. contents::
+comuneimola.compensi
+====================
 
-.. Note!
-   -----
-   Update the following URLs to point to your:
+Compatibilità
+-------------
+ * Plone 3.3.5
+ * Plone 4.2.1
 
-   - code repository
-   - bug tracker
-   - questions/comments feedback mail
-   (do not set a real mail, to avoid spams)
+Note
+----
+ * Se si installa il prodotto per usarlo con versioni di plone precedente alla 4
+   è necessario fissare la versione di collective.js.datatables alla 1.9.
+   * Le funzionalità di traduzione della tabella, mancanti in collective.js.datatables
+     1.9 sono state riportate nel pacchetto e messe sotto condizione Plone >= 4.
 
-   Or remove it if not used.
+Funzionamento
+-------------
+Una volta installato il prodotto è possibile aggiungere oggetti "Area compensi".
+Dentro a questi oggetti è possibile aggiungere oggetti compensi.
 
-- Code repository: http://svn.somewhere.com/...
-- Questions and comments to somemailing_list
-- Report bugs at http://bug.somewhere.com/..
+La visualizzazione dell'area è impostata per utilizzare come la vista con 
+collective.js.datatables.
 
+E' presente un bottone che permette di scaricare il contenuto della tabella/cartella
+in formato csv.
+
+Per quello che riguarda il workflow degli oggetti, per ora si decide di restare
+il più vicino possibile al simple pubblication wf di plone.
+
+Un manager dovrà creare l'area.
+E' consigliato aggiungere all'area delle portlet-cercatore per trovare i compensi
+privati e da revisionare, per comodità degli utenti autenticati.
+
+I contributor potranno creare compensi dentro l'area.
+Un contributor:
+ * può modificare solo i compensi creati da lui;
+ * può mandare in revisione i compensi;
+ * non può editare fuori dallo stato privato;
+ * non può cambiare stato quando il compenso è pubblico/in revisione.
+
+Un revisore può:
+ * può pubblicare i documenti;
+ * può far tornare i documenti in stato revisione/privato;
+ * non può editare i documenti.
+ * può vedere documenti privati. Altrimenti se manda indietro un documento, 
+   ottiene permessi insufficienti
+
+Il manager potrà fare tutto, ma si intende usarlo solo per momenti in cui non si
+può fare a meno di un superuser per sistemare la situazione.
+
+Oltre all'owner, potrà modificare il compenso anche l'editor (solo se privato).
+In questo modo si da possibilità di fare modifiche tramite lo sharing; si tratta
+di una sorta di delega.
+Questa sorta di delega si da tramite sharing (lo possono usare owner e manager)

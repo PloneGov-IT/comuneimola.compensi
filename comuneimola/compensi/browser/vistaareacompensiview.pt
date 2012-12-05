@@ -71,7 +71,8 @@
                    <tal:items tal:repeat="brain brains">
                        <tr>
                            <td>
-                              <a tal:attributes="href brain/getURL">
+                              <a tal:attributes="href brain/getURL;
+                                                 class string:state-${brain/review_state}">
                                 <tal:title content="brain/Title"></tal:title>
                               </a>
                            </td>

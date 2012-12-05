@@ -6,12 +6,10 @@
  <property name="title" i18n:translate="">ATCompenso</property>
  <property name="description" i18n:translate="">AT Compenso</property>
  <property
-    name="icon_expr">string:${portal_url}/++resource++comuneimola.compensi.images/compensi.png</property>
+    name="content_icon">++resource++comuneimola.compensi.images/compensi.png</property>
  <property name="content_meta_type">ATCompenso</property>
  <property name="product">comuneimola.compensi</property>
  <property name="factory">addATCompenso</property>
- <property name="add_view_expr"></property>
- <property name="link_target"></property>
  <property name="immediate_view">atct_edit</property>
  <property name="global_allow">False</property>
  <property name="filter_content_types">True</property>

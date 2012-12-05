@@ -1,6 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="comuneimola.compensi">
 
   <include package="plone.app.contentmenu" />
@@ -18,7 +19,6 @@
       permission="zope.Public"
       />
 
-
   <browser:page
       for="..interfaces.atareacompensi.IATAreaCompensi"
       name="areacompensi_view"
@@ -27,6 +27,14 @@
       allowed_interface=".vistaareacompensiview.IVistaareacompensiView"
       permission="zope.Public"
       />
+
+  <browser:page
+    zcml:condition="not-have plone-4"
+    for="..interfaces.atareacompensi.IATAreaCompensi"
+    name="collective.js.datatables.translation"
+    class=".translation.Translations"
+    permission="zope2.View"
+    />
 
   <browser:menuItem
       for="..interfaces.atcompenso.IATCompenso"
