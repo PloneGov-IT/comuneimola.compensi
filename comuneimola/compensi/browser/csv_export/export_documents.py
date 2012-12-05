@@ -12,6 +12,7 @@ import csv
 import os
 import tempfile
 import shutil
+import codecs
 
 
 class ICsvExport(Interface):
@@ -77,6 +78,7 @@ class CsvExport(BrowserView):
         tmppath = tempfile.mkdtemp(dir=tmp)
         csvpath = os.path.join(tmppath, self.filename)
         csvstream = open(csvpath, 'w')
+        csvstream.write(codecs.BOM_UTF8)
 
         elements_to_export = self.get_elements(objects=True)
         self.write_elements_to_csv(csvstream, elements_to_export)
