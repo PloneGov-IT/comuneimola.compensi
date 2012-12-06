@@ -11,33 +11,13 @@ def read(*rnames):
 
 version = '1.0.dev0'
 
-long_description = (
-    read('README.txt')
-    + '\n' +
-    'Change history\n'
-    '**************\n'
-    + '\n' +
-    read('CHANGES.txt')
-    + '\n' +
-    'Detailed Documentation\n'
-    '**********************\n'
-    + '\n' +
-    read('comuneimola', 'compensi', 'README.txt')
-    + '\n' +
-    'Contributors\n'
-    '************\n'
-    + '\n' +
-    read('CONTRIBUTORS.txt')
-    + '\n' +
-    'Download\n'
-    '********\n')
-
 tests_require = ['zope.testing']
 
 setup(name='comuneimola.compensi',
       version=version,
-      description="",
-      long_description=long_description,
+      description="Gestione Compensi per il comune di Imola",
+      long_description=open("README.txt").read() + "\n" +
+                       open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
