@@ -4,6 +4,7 @@ Changelog
 1.0.dev0 (unreleased)
 ---------------------
 
+- aggiunto workflow personalizzato per AT Compenso [lucabel&mirco]
 - traduzioni italiane [mirco&lucabel]
-- aggiunto l'archetype Compenso e la relativa vista [mirco]
+- aggiunto l'AT Compenso e la relativa vista [mirco]
 - Initial release
