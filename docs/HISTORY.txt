@@ -7,6 +7,7 @@ Changelog
 - aggiunta compatibilità con Plone 3.3.5 [lucabel]
 - aggiunto workflow personalizzato per AT Compenso [lucabel&mirco]
 - traduzioni italiane [mirco&lucabel]
+- inserito export in csv della tabella riassuntiva dei compensi [lucabel]
 - aggiunto l'AT Compenso e la relativa vista [mirco]
 - aggiunto l'AT Area Compenso e la relativa vista che utilizza js.datatables [lucabel]
 - Initial release
