@@ -9,8 +9,8 @@
   -->
 <object name="portal_factory" meta_type="Plone Factory Tool">
   <factorytypes>
-    <!-- -*- extra stuff goes here -*- -->
     <type portal_type="ATAreaCompensi" />
     <type portal_type="ATCompenso" />
+    <type portal_type="ATLinkCompenso"/>
   </factorytypes>
 </object>

@@ -12,4 +12,6 @@
     meta_type="Factory-based Type Information with dynamic views" />
   <object name="ATCompenso"
     meta_type="Factory-based Type Information with dynamic views" />
+  <object name="ATLinkCompenso"
+    meta_type="Factory-based Type Information with dynamic views" />
 </object>

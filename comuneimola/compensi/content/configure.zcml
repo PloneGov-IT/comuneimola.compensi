@@ -15,5 +15,11 @@
         interface="..interfaces.atcompenso.IATCompenso"
         />
   </class>
+  <class class=".atlinkcompenso.ATLinkCompenso">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.atlinkcompenso.IATLinkCompenso"
+        />
+  </class>
 
 </configure>
