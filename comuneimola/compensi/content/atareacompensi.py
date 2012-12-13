@@ -31,6 +31,24 @@ ATAreaCompensiSchema = folder.ATFolderSchema.copy() + atapi.Schema((
             ),
         required=False,
     ),
+    atapi.LinesField(name='natura_importo',
+        widget=atapi.LinesWidget(
+            label=_(u"type_of_amount_label",
+                    default=u"Type of amount"),
+            description=_(u"type_of_amount_description",
+                          default=u"List here the types of amount"),
+            ),
+        required=False,
+    ),
+    atapi.LinesField(name='norma_o_titolo',
+        widget=atapi.LinesWidget(
+            label=_(u"type_of_norm",
+                    default=u"Type of norm or title"),
+            description=_(u"type_of_norm_description",
+                          default=u"List here the norm or title"),
+            ),
+        required=False,
+    ),
 
 ))
 

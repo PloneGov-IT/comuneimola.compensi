@@ -12,6 +12,7 @@
 
   <include package=".browser" />
   <include package=".content" />
+  <include package=".viewlets" />
 
   <gs:registerProfile
       name="default"
@@ -19,6 +20,11 @@
       directory="profiles/default"
       description="Archetpes that allow to handle compensation"
       provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <subscriber
+      provides="Products.Archetypes.interfaces.IObjectPostValidation"
+      factory=".validators.CompensiPostValidation"
       />
 
 </configure>

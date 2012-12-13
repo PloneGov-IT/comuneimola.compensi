@@ -1,0 +1,8 @@
+<div class="check_link" 
+     i18n:domain="comuneimola.compensi"
+     tal:condition="context/show_alert">
+      <dl class="portalMessage warning">
+            <dt i18n:translate="warning">Warning</dt>
+            <dd i18n:translate="warning_message">Attenzione non sono stati inseriti link all'interno della del compenso.</dd>
+        </dl>
+</div>

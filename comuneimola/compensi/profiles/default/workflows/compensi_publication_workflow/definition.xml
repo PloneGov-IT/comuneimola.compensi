@@ -5,12 +5,12 @@
  <permission>Access contents information</permission>
  <permission>Change portal events</permission>
  <permission>Copy or Move</permission>
+ <permission>Delete objects</permission>
  <permission>List folder contents</permission>
  <permission>Modify portal content</permission>
  <permission>Modify view template</permission>
  <permission>Sharing page: Delegate roles</permission>
  <permission>View</permission>
- <permission>Delete objects</permission>
  <state state_id="pending" title="Pending review">
   <description>Waiting to be reviewed, not editable by the owner.</description>
   <exit-transition transition_id="make_private"/>
@@ -169,7 +169,7 @@
   <description>Publishing the item makes it visible to other users.</description>
   <action url="%(content_url)s/content_status_modify?workflow_action=publish" category="workflow" icon="">Publish</action>
   <guard>
-   <guard-permission>Review portal content</guard-permission>
+   <guard-permission>Modify portal content</guard-permission>
   </guard>
  </transition>
  <transition transition_id="reject" title="Reviewer send content back for re-drafting" new_state="private" trigger="USER" before_script="" after_script="">
@@ -193,6 +193,7 @@ Per ora la nascondiamo con l'espressione</description>
   <action url="%(content_url)s/content_status_modify?workflow_action=submit" category="workflow" icon="">Submit for publication</action>
   <guard>
    <guard-permission>Request review</guard-permission>
+   <guard-expression>python: False</guard-expression>
   </guard>
  </transition>
  <worklist worklist_id="reviewer_queue" title="">

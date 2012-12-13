@@ -8,6 +8,8 @@ from Products.CMFPlone.utils import normalizeString
 from DateTime import DateTime
 from zope.interface.interfaces import IInterface
 from ZPublisher.Iterators import IStreamIterator
+from comuneimola.compensi import compensiMessageFactory as mf
+from zope.i18n import translate
 import csv
 import os
 import tempfile
@@ -48,11 +50,13 @@ class ICsvExport(Interface):
 
 NAME_MAPPING = {'title': 'Titolo',
                 'fiscal_data': 'Dati fiscali',
-                'amount': 'Importo (€)',
+                'amount': 'Importo (€)'.decode('utf-8').encode('utf-8'),
+                'amount_type': 'Natura dell\'importo',
                 'norm': 'Norma',
+                'other_norm': 'Altro',
                 'office': 'Ufficio',
                 'responsible': 'Responsabile procedimento',
-                'award_procedures': 'Modalità di affidamento',
+                'award_procedures': 'Modalità di affidamento'.decode('utf-8').encode('utf-8'),
                 'effectiveDate': 'Data di pubblicazione',
                 'note': 'Note',
                 }
@@ -104,6 +108,9 @@ class CsvExport(BrowserView):
             if field == 'effectiveDate':
                 if value:
                     value = value.strftime('%d/%m/%Y')
+            if field == 'norm':
+                if value == 'other':
+                    value = translate(mf('other'), context=self.request)
             if value:
                 addvalue(value)
             else:
@@ -117,8 +124,8 @@ class CsvExport(BrowserView):
                             quotechar=self.stringdelimiter,
                             quoting=csv.QUOTE_NONNUMERIC)
 
-        writer.writerow([NAME_MAPPING[field]
-                        for field in self.get_fields])
+        encoded_field_names = [NAME_MAPPING[field] for field in self.get_fields]
+        writer.writerow(encoded_field_names)
 
         for element in elements_to_export:
 
@@ -134,7 +141,9 @@ class CsvExport(BrowserView):
         return ['title',
                 'fiscal_data',
                 'amount',
+                'amount_type',
                 'norm',
+                'other_norm',
                 'office',
                 'responsible',
                 'award_procedures',

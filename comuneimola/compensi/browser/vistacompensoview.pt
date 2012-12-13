@@ -22,6 +22,7 @@
                             folderlisting_macro view_macros/folderlisting | folderlisting | base_macros/folderlisting;
                             errors python:request.get('errors', {})">
 
+            <div tal:replace="structure provider:plone.abovecontenttitle" />
             <h1 class="documentFirstHeading" tal:content="here/Title"></h1>
 
             <div class="compensoField" tal:condition="here/getFiscal_data">

@@ -1,13 +1,18 @@
 """Main product initializer
 """
 
-from zope.i18nmessageid import MessageFactory
 from comuneimola.compensi import config
 
 from Products.Archetypes import atapi
 from Products.CMFCore import utils
 
+from zope.i18nmessageid import MessageFactory
 compensiMessageFactory = MessageFactory('comuneimola.compensi')
+
+from Products.validation import validation
+from validators import FloatValidator
+validation.register(FloatValidator('isFloat'))
+
 
 
 def initialize(context):

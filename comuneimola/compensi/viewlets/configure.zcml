@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="comuneimola.compensi">
+
+    <browser:viewlet
+        name="checklink_viewlet"
+        for="comuneimola.compensi.interfaces.atcompenso.IATCompenso"
+        class=".check_link.CheckLink"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+        permission="zope2.View"
+    />
+
+</configure>

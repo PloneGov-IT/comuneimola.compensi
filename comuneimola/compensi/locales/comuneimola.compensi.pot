@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: comuneimola.compensi 1.0\n"
-"POT-Creation-Date: 2012-12-04 14:22+0000\n"
+"POT-Creation-Date: 2012-12-13 14:06+0000\n"
 "PO-Revision-Date: 2012-10-03 16:39 +0200\n"
 "Last-Translator: lucabel <luca.bellenghi@redturtle.it>\n"
 "Language-Team: Plone NL <plone-nl@lists.plone.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: comuneimola.compensi\n"
 
-#: ./content/atcompenso.py:119
+#: ./content/atcompenso.py:138
 msgid "-- not specified --"
 msgstr ""
 
@@ -40,41 +40,55 @@ msgstr ""
 msgid "Area Compensi View"
 msgstr ""
 
-#: ./browser/vistacompensoview.pt:75
+#: ./browser/vistacompensoview.pt:87
 msgid "Attachments"
 msgstr ""
 
 msgid "Compenso View"
 msgstr ""
 
-#: ./browser/vistacompensoview.pt:17
+#: ./browser/vistacompensoview.pt:29
 msgid "Fiscal data"
 msgstr ""
 
-#: ./browser/vistacompensoview.pt:56
+#: ./validators.py:51
+msgid "If you select 'other' in the previous form, you must write something here."
+msgstr ""
+
+#: ./browser/vistacompensoview.pt:68
 msgid "Publication date"
 msgstr ""
 
-#. Default: "Insert the amount of remuneration (the amount is meant in Euro)"
-#: ./content/atcompenso.py:29
+#. Default: "Insert the amount of remuneration (the amount is meant in Euro, format X.YY)"
+#: ./content/atcompenso.py:30
 msgid "amount_help"
 msgstr ""
 
 #. Default: "Amount"
 #: ./browser/vistaareacompensiview.pt:64
-#: ./browser/vistacompensoview.pt:23
-#: ./content/atcompenso.py:28
+#: ./browser/vistacompensoview.pt:35
+#: ./content/atcompenso.py:29
 msgid "amount_label"
 msgstr ""
 
+#. Default: "Amount type"
+#: ./content/atcompenso.py:39
+msgid "amount_type"
+msgstr ""
+
+#. Default: "Select the type of amount"
+#: ./content/atcompenso.py:40
+msgid "amount_type_help"
+msgstr ""
+
 #. Default: "Select the award procedures"
-#: ./content/atcompenso.py:68
+#: ./content/atcompenso.py:86
 msgid "award_procedures_help"
 msgstr ""
 
 #. Default: "Procedures for the award"
 #: ./browser/vistaareacompensiview.pt:66
-#: ./browser/vistacompensoview.pt:48
+#: ./browser/vistacompensoview.pt:60
 #: ./content/atareacompensi.py:27
 msgid "award_procedures_label"
 msgstr ""
@@ -90,7 +104,7 @@ msgid "compenso_title"
 msgstr ""
 
 #. Default: "If you set this date the item will be visible starting from this date. If you do not insert the date the item will be published immediately with the action of publication."
-#: ./content/atcompenso.py:86
+#: ./content/atcompenso.py:104
 msgid "effectiveDate_help"
 msgstr ""
 
@@ -109,32 +123,32 @@ msgstr ""
 msgid "fiscal_data_label"
 msgstr ""
 
-#. Default: "Insert a short text to describe the norm. (max 60 characters)"
-#: ./content/atcompenso.py:39
+#. Default: "Insert a short text to describe the norm."
+#: ./content/atcompenso.py:50
 msgid "norm_help"
 msgstr ""
 
 #. Default: "Norm"
-#: ./browser/vistacompensoview.pt:30
-#: ./content/atcompenso.py:38
+#: ./browser/vistacompensoview.pt:42
+#: ./content/atcompenso.py:49
 msgid "norm_label"
 msgstr ""
 
 #. Default: "Note"
-#: ./browser/vistacompensoview.pt:66
-#: ./content/atcompenso.py:76
+#: ./browser/vistacompensoview.pt:78
+#: ./content/atcompenso.py:94
 msgid "note_label"
 msgstr ""
 
 #. Default: "Select the office responsible"
-#: ./content/atcompenso.py:50
+#: ./content/atcompenso.py:68
 msgid "office_help"
 msgstr ""
 
 #. Default: "Office"
 #: ./browser/vistaareacompensiview.pt:65
-#: ./browser/vistacompensoview.pt:36
-#: ./content/atcompenso.py:49
+#: ./browser/vistacompensoview.pt:48
+#: ./content/atcompenso.py:67
 msgid "office_label"
 msgstr ""
 
@@ -148,24 +162,160 @@ msgstr ""
 msgid "office_list_description"
 msgstr ""
 
+#: ./content/atcompenso.py:163
+msgid "other"
+msgstr ""
+
+#. Default: "If you select other in the previous field, write here the value (max 60 characters)"
+#: ./content/atcompenso.py:57
+msgid "other_norm_help"
+msgstr ""
+
+#. Default: "Other norm"
+#: ./content/atcompenso.py:56
+msgid "other_norm_label"
+msgstr ""
+
 #. Default: "List here the procedures for the award"
 #: ./content/atareacompensi.py:29
 msgid "relied_modality_description"
 msgstr ""
 
 #. Default: "Specify the name of the charge of the procedure"
-#: ./content/atcompenso.py:58
+#: ./content/atcompenso.py:76
 msgid "responsible_help"
 msgstr ""
 
 #. Default: "Charge of the procedure"
-#: ./browser/vistacompensoview.pt:42
-#: ./content/atcompenso.py:57
+#: ./browser/vistacompensoview.pt:54
+#: ./content/atcompenso.py:75
 msgid "responsible_label"
 msgstr ""
 
+#. Default: "No data available in table"
+#: ./browser/translation.py:35
+msgid "sEmptyTable"
+msgstr ""
+
+#. Default: "First"
+#: ./browser/translation.py:60
+msgid "sFirst"
+msgstr ""
+
+#. Default: "Showing _START_ to _END_ of _TOTAL_ entries"
+#: ./browser/translation.py:37
+msgid "sInfo"
+msgstr ""
+
+#. Default: "Showing 0 to 0 of 0 entries"
+#: ./browser/translation.py:39
+msgid "sInfoEmpty"
+msgstr ""
+
+#. Default: "(filtered from _MAX_ total entries)"
+#: ./browser/translation.py:41
+msgid "sInfoFiltered"
+msgstr ""
+
+#: ./browser/translation.py:43
+msgid "sInfoPostFix"
+msgstr ""
+
+#. Default: ","
+#: ./browser/translation.py:45
+msgid "sInfoThousands"
+msgstr ""
+
+#. Default: "Last"
+#: ./browser/translation.py:61
+msgid "sLast"
+msgstr ""
+
+#. Default: "Show _MENU_ entries"
+#: ./browser/translation.py:47
+msgid "sLengthMenu"
+msgstr ""
+
+#. Default: "Loading..."
+#: ./browser/translation.py:49
+msgid "sLoadingRecords"
+msgstr ""
+
+#. Default: "Next"
+#: ./browser/translation.py:62
+msgid "sNext"
+msgstr ""
+
+#. Default: "Previous"
+#: ./browser/translation.py:63
+msgid "sPrevious"
+msgstr ""
+
+#. Default: "Processing..."
+#: ./browser/translation.py:51
+msgid "sProcessing"
+msgstr ""
+
+#. Default: "Search:"
+#: ./browser/translation.py:53
+msgid "sSearch"
+msgstr ""
+
+#. Default: "activate to sort column ascending"
+#: ./browser/translation.py:66
+msgid "sSortAscending"
+msgstr ""
+
+#. Default: "activate to sort column descending"
+#: ./browser/translation.py:68
+msgid "sSortDescending"
+msgstr ""
+
+#: ./browser/translation.py:55
+msgid "sUrl"
+msgstr ""
+
+#. Default: "No matching records found"
+#: ./browser/translation.py:57
+msgid "sZeroRecords"
+msgstr ""
+
 #. Default: "Name of the enterprise"
-#: ./content/atcompenso.py:84
+#: ./content/atcompenso.py:102
 msgid "title_label"
+msgstr ""
+
+#. Default: "List here the types of amount"
+#: ./content/atareacompensi.py:38
+msgid "type_of_amount_description"
+msgstr ""
+
+#. Default: "Type of amount"
+#: ./content/atareacompensi.py:36
+msgid "type_of_amount_label"
+msgstr ""
+
+#. Default: "Type of norm or title"
+#: ./content/atareacompensi.py:45
+msgid "type_of_norm"
+msgstr ""
+
+#. Default: "List here the norm or title"
+#: ./content/atareacompensi.py:47
+msgid "type_of_norm_description"
+msgstr ""
+
+#. Default: "Warning"
+#: ./viewlets/check_link.pt:5
+msgid "warning"
+msgstr ""
+
+#. Default: "Attenzione non sono stati inseriti link all'interno della del compenso."
+#: ./viewlets/check_link.pt:6
+msgid "warning_message"
+msgstr ""
+
+#: ./validators.py:33
+msgid "wrong_value_error"
 msgstr ""
 
