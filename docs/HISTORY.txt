@@ -3,7 +3,13 @@ Changelog
 
 1.0.dev0 (unreleased)
 ---------------------
-
+- aggiunto il campo 'nautura dell'importo' [lucabel]
+- aggiunto un validatore al campo per l'importo [lucabel]
+- aggiunto un validatore che controlla la coppia dei campi norma/altro [lucabel]
+- nascoste le date di pubblicazione e scadenza nel form di edit dei compensi [lucabel]
+- cambiata la vista del compenso per mostrare i due campi nuovi [lucabel]
+- aggiunti i campi nuovi all'export in csv [lucabel]
+- ora il creatore del documento lo pubblica [lucabel] 
 - aggiunta compatibilità con Plone 3.3.5 [lucabel]
 - aggiunto workflow personalizzato per AT Compenso [lucabel&mirco]
 - traduzioni italiane [mirco&lucabel]
