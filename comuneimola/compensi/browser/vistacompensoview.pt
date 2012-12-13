@@ -39,8 +39,20 @@
                 &euro;
             </div>
             <div class="compensoField">
+                <label><span tal:omit-tag="" i18n:translate="amount_type">Amount type</span>:</label>
+                <metal:field use-macro="python:context.widget('amount_type', mode='view')">
+                    Body text
+                </metal:field>
+            </div>
+            <div class="compensoField">
                 <label><span tal:omit-tag="" i18n:translate="norm_label">Norm</span>:</label>
                 <metal:field use-macro="python:context.widget('norm', mode='view')">
+                    Body text
+                </metal:field>
+            </div>
+            <div class="compensoField" tal:condition="here/getOther_norm">
+                <label><span tal:omit-tag="" i18n:translate="other_norm_label">Norm</span>:</label>
+                <metal:field use-macro="python:context.widget('other_norm', mode='view')">
                     Body text
                 </metal:field>
             </div>
