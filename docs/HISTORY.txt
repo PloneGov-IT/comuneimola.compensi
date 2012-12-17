@@ -3,6 +3,7 @@ Changelog
 
 1.0.dev0 (unreleased)
 ---------------------
+- nascosti gli elementi AT Compenso dalla NavTree [micmord]
 - aggiunto il campo 'nautura dell'importo' [lucabel]
 - aggiunto un validatore al campo per l'importo [lucabel]
 - aggiunto un validatore che controlla la coppia dei campi norma/altro [lucabel]
