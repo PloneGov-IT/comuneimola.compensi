@@ -76,7 +76,10 @@
                                 <tal:title content="brain/Title"></tal:title>
                               </a>
                            </td>
-                           <td tal:content="brain/getAmount">Amount</td>
+                           <td class="moneyformat"
+                               tal:define="amount python: view.get_money_format(brain.getAmount)">
+                              <tal:amount tal:replace="amount">Amount</tal:amount>
+                           </td>
                            <td tal:content="brain/getOffice">Office</td>
                            <td tal:content="brain/getAward_procedures">Procedures for the award</td>
                            <td tal:define="effective_date brain/effective;

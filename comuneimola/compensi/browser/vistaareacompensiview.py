@@ -1,6 +1,8 @@
 from zope.interface import implements, Interface
 from Products.Five import BrowserView
 from Products.CMFCore.utils import getToolByName
+from comuneimola.compensi.interfaces.atareacompensi import IMoneyFormat
+from zope.component import getUtility
 
 
 class IVistaareacompensiView(Interface):
@@ -24,6 +26,7 @@ class vistaareacompensiView(BrowserView):
     def __init__(self, context, request):
         self.context = context
         self.request = request
+        self.mf = getUtility(IMoneyFormat)
 
     @property
     def portal_catalog(self):
@@ -40,3 +43,9 @@ class vistaareacompensiView(BrowserView):
         Right now, everybody can see it
         """
         return True
+
+    def get_money_format(self, value):
+        """
+        call the money format utility and convert the value
+        """
+        return self.mf.moneyfmt(value)

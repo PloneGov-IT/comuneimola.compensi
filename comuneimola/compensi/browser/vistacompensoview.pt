@@ -33,9 +33,7 @@
             </div>
             <div class="compensoField">
                 <label><span tal:omit-tag="" i18n:translate="amount_label">Amount</span>:</label>
-                <metal:field use-macro="python:context.widget('amount', mode='view')">
-                    Body text
-                </metal:field>
+                <tal:amount tal:content="python: view.get_money_format(here.getAmount())"/>
                 &euro;
             </div>
             <div class="compensoField">

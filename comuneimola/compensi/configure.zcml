@@ -27,4 +27,8 @@
       factory=".validators.CompensiPostValidation"
       />
 
+  <utility
+    provides="comuneimola.compensi.interfaces.atareacompensi.IMoneyFormat"
+    factory=".utilities.MoneyFormat" />
+
 </configure>

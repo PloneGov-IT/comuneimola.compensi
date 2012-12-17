@@ -9,6 +9,8 @@ from DateTime import DateTime
 from zope.interface.interfaces import IInterface
 from ZPublisher.Iterators import IStreamIterator
 from comuneimola.compensi import compensiMessageFactory as mf
+from comuneimola.compensi.interfaces.atareacompensi import IMoneyFormat
+from zope.component import getUtility
 from zope.i18n import translate
 import csv
 import os
@@ -76,6 +78,7 @@ class CsvExport(BrowserView):
         folder_title = normalizeString(self.context.Title(),
                                        encoding=self.encoding)
         self.filename = date + '_' + folder_title + '.csv'
+        self.moneyfmt = getUtility(IMoneyFormat)
 
     def __call__(self):
         tmp = tempfile.mkdtemp()
@@ -108,6 +111,8 @@ class CsvExport(BrowserView):
             if field == 'effectiveDate':
                 if value:
                     value = value.strftime('%d/%m/%Y')
+            if field == 'amount':
+                value = self.moneyfmt.moneyfmt(value)
             if field == 'norm':
                 if value == 'other':
                     value = translate(mf('other'), context=self.request)

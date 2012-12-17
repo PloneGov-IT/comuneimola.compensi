@@ -5,4 +5,8 @@ from zope.interface import Interface
 class IATAreaCompensi(Interface):
     """Area Compensi"""
 
-    # -*- schema definition goes here -*-
+
+class IMoneyFormat(Interface):
+    """
+    Used to retrieve correct format as money value
+    """

@@ -3,6 +3,10 @@ Changelog
 
 1.0.dev0 (unreleased)
 ---------------------
+- cambiato visualizzazione della cifra dell'importo: [lucabel]
+ - cambiato nel dettaglio;
+ - cambiato nell'area compensi;
+ - cambiato il js per fare un confronto diverso;
 - nascosti gli elementi AT Compenso dalla NavTree [micmord]
 - aggiunto il campo 'nautura dell'importo' [lucabel]
 - aggiunto un validatore al campo per l'importo [lucabel]
