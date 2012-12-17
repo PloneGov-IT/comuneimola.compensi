@@ -31,7 +31,11 @@ class MoneyFormat(object):
         if sign:
             build(trailneg)
         for i in range(places):
-            build(next() if digits else '0')
+            if digits:
+                build(next())
+            else:
+                build(0)
+            #build(next() if digits else '0')
         build(dp)
         if not digits:
             build('0')
@@ -43,5 +47,9 @@ class MoneyFormat(object):
                 i = 0
                 build(sep)
         build(curr)
-        build(neg if sign else pos)
+        #build(neg if sign else pos)
+        if sign:
+            build(neg)
+        else:
+            build(pos)
         return ''.join(reversed(result))
