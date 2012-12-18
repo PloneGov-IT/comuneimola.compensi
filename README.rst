@@ -59,3 +59,23 @@ Un revisore può:
 Solo utenti con questi due ruoli potranno eseguire azioni di cancella, rinomina, taglia-incolla
 
 Per applicare le azioni di workflow (manda in revisione, pubblicazione, torna indietro, ecc.) all'oggetto "Compenso" e agli allegati di tipo "Collegamento" (i "File" non hanno workflow proprio, sono pubblici ma seguono il workflow dell'oggetto contenitore) contenuti bisogna agire tramite la voce "Avanzate..." dal menu "Stato".
+
+
+Crediti
+-------
+
+Sviluppato dal `Comune di Imola`__
+
+Il comune di Imola supporta `l'iniziativa PloneGov`__.
+
+__ http://www.comune.imola.bo.it/
+__ http://www.plonegov.it/
+
+
+Autori
+------
+Il rpodotto è stato sviluppato da RedTurtle Technology.
+
+.. image:: http://www.redturtle.net/redturtle_banner.png
+   :alt: RedTurtle Technology Site
+   :target: http://www.redturtle.net/
