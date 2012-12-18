@@ -58,3 +58,5 @@ Un revisore può:
 Solo utenti con questi due ruoli potranno eseguire azioni di cancella, rinomina, taglia-incolla
 
 Per applicare le azioni di workflow (manda in revisione, pubblicazione, torna indietro, ecc.) all'oggetto "Compenso" e agli allegati di tipo "Collegamento" (i "File" non hanno workflow proprio, sono pubblici ma seguono il workflow dell'oggetto contenitore) contenuti bisogna agire tramite la voce "Avanzate..." dal menu "Stato".
+
+
