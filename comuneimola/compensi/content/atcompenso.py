@@ -165,7 +165,7 @@ class ATCompenso(folder.ATFolder):
         We need to be authenticated;
         In this folderish object no link should be present
         """
-        links = self.listFolderContents({'portal_type': 'Link'})
+        links = self.listFolderContents({'portal_type': 'ATLinkCompenso'})
         isAnon = self.portal_membership.isAnonymousUser()
         if len(links) == 0 and not isAnon:
             return True
