@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <dc-workflow workflow_id="compensi_publication_workflow" title="Simple Publication Workflow" description=" - Simple workflow that is useful for basic web sites. - Things start out as private, and can either be submitted for review, or published directly. - The creator of a content item can edit the item even after it is published." state_variable="review_state" initial_state="private" manager_bypass="False">
  <permission>ATContentTypes: Add File</permission>
- <permission>ATContentTypes: Add Link</permission>
  <permission>Access contents information</permission>
  <permission>Change portal events</permission>
  <permission>Copy or Move</permission>
@@ -11,6 +10,7 @@
  <permission>Modify view template</permission>
  <permission>Sharing page: Delegate roles</permission>
  <permission>View</permission>
+ <permission>comuneimola.compensi: Add ATLinkCompenso</permission>
  <state state_id="pending" title="Pending review">
   <description>Waiting to be reviewed, not editable by the owner.</description>
   <exit-transition transition_id="make_private"/>
@@ -18,8 +18,6 @@
   <exit-transition transition_id="reject"/>
   <exit-transition transition_id="retract"/>
   <permission-map name="ATContentTypes: Add File" acquired="False">
-  </permission-map>
-  <permission-map name="ATContentTypes: Add Link" acquired="False">
   </permission-map>
   <permission-map name="Access contents information" acquired="False">
    <permission-role>Contributor</permission-role>
@@ -66,6 +64,8 @@
    <permission-role>Reader</permission-role>
    <permission-role>Reviewer</permission-role>
    <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="comuneimola.compensi: Add ATLinkCompenso" acquired="False">
   </permission-map>
  </state>
  <state state_id="private" title="Private">
@@ -128,8 +128,6 @@
   <exit-transition transition_id="reject"/>
   <permission-map name="ATContentTypes: Add File" acquired="False">
   </permission-map>
-  <permission-map name="ATContentTypes: Add Link" acquired="False">
-  </permission-map>
   <permission-map name="Access contents information" acquired="False">
    <permission-role>Anonymous</permission-role>
   </permission-map>
@@ -163,6 +161,8 @@
   </permission-map>
   <permission-map name="View" acquired="False">
    <permission-role>Anonymous</permission-role>
+  </permission-map>
+  <permission-map name="comuneimola.compensi: Add ATLinkCompenso" acquired="False">
   </permission-map>
  </state>
  <transition transition_id="publish" title="Reviewer publishes content" new_state="published" trigger="USER" before_script="" after_script="">
