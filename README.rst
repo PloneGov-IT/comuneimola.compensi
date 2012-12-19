@@ -74,7 +74,7 @@ __ http://www.plonegov.it/
 
 Autori
 ------
-Il rpodotto è stato sviluppato da RedTurtle Technology.
+Il prodotto è stato sviluppato da RedTurtle Technology.
 
 .. image:: http://www.redturtle.net/redturtle_banner.png
    :alt: RedTurtle Technology Site
