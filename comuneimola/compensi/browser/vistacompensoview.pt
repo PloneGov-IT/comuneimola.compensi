@@ -49,7 +49,7 @@
                 </metal:field>
             </div>
             <div class="compensoField" tal:condition="here/getOther_norm">
-                <label><span tal:omit-tag="" i18n:translate="other_norm_label">Norm</span>:</label>
+                <label><span tal:omit-tag="" i18n:translate="other_norm_label">Other norm</span>:</label>
                 <metal:field use-macro="python:context.widget('other_norm', mode='view')">
                     Body text
                 </metal:field>

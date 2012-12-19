@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-12-13 14:06+0000\n"
+"POT-Creation-Date: 2012-12-19 13:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: comuneimola.compensi\n"
 
-#: ./content/atcompenso.py:138
+#: ./content/atcompenso.py:135
 msgid "-- not specified --"
 msgstr "-- non specificato --"
 
@@ -39,7 +39,7 @@ msgstr "Archetype che permette di gestire un compenso"
 msgid "Area Compensi View"
 msgstr "Vista per l'area compensi"
 
-#: ./browser/vistacompensoview.pt:87
+#: ./browser/vistacompensoview.pt:97
 msgid "Attachments"
 msgstr "Allegati"
 
@@ -50,11 +50,11 @@ msgstr "Vista per i compensi"
 msgid "Fiscal data"
 msgstr "Dati fiscali"
 
-#: ./validators.py:51
+#: ./validators.py:54
 msgid "If you select 'other' in the previous form, you must write something here."
 msgstr "È stato scelto altro nel campo precedente. Questo valore diventa obbligatorio."
 
-#: ./browser/vistacompensoview.pt:68
+#: ./browser/vistacompensoview.pt:78
 msgid "Publication date"
 msgstr "Data di pubblicazione"
 
@@ -71,23 +71,24 @@ msgid "amount_label"
 msgstr "Importo"
 
 #. Default: "Amount type"
-#: ./content/atcompenso.py:39
+#: ./browser/vistacompensoview.pt:40
+#: ./content/atcompenso.py:40
 msgid "amount_type"
 msgstr "Natura dell'importo"
 
 #. Default: "Select the type of amount"
-#: ./content/atcompenso.py:40
+#: ./content/atcompenso.py:41
 msgid "amount_type_help"
 msgstr "Selezionare il tipo di importo"
 
 #. Default: "Select the award procedures"
-#: ./content/atcompenso.py:86
+#: ./content/atcompenso.py:87
 msgid "award_procedures_help"
 msgstr "Selezionare la modalità di affidamento"
 
 #. Default: "Procedures for the award"
 #: ./browser/vistaareacompensiview.pt:66
-#: ./browser/vistacompensoview.pt:60
+#: ./browser/vistacompensoview.pt:70
 #: ./content/atareacompensi.py:27
 msgid "award_procedures_label"
 msgstr "Modalità di affidamento"
@@ -103,7 +104,7 @@ msgid "compenso_title"
 msgstr "Nome dell'impresa"
 
 #. Default: "If you set this date the item will be visible starting from this date. If you do not insert the date the item will be published immediately with the action of publication."
-#: ./content/atcompenso.py:104
+#: ./content/atcompenso.py:105
 msgid "effectiveDate_help"
 msgstr "Se si imposta questa data l'elemento sarà visibile a partire da questa data. Se non viene inserita alcuna data l'elemento verrà pubblicato da subito con l'azione di pubblicazione."
 
@@ -123,31 +124,31 @@ msgid "fiscal_data_label"
 msgstr "Codice fiscale o partita IVA"
 
 #. Default: "Insert a short text to describe the norm."
-#: ./content/atcompenso.py:50
+#: ./content/atcompenso.py:51
 msgid "norm_help"
 msgstr "Inserire un breve testo per descrivere la norma."
 
 #. Default: "Norm"
-#: ./browser/vistacompensoview.pt:42
-#: ./content/atcompenso.py:49
+#: ./browser/vistacompensoview.pt:46
+#: ./content/atcompenso.py:50
 msgid "norm_label"
 msgstr "Norma o titolo"
 
 #. Default: "Note"
-#: ./browser/vistacompensoview.pt:78
-#: ./content/atcompenso.py:94
+#: ./browser/vistacompensoview.pt:88
+#: ./content/atcompenso.py:95
 msgid "note_label"
 msgstr "Note"
 
 #. Default: "Select the office responsible"
-#: ./content/atcompenso.py:68
+#: ./content/atcompenso.py:69
 msgid "office_help"
 msgstr "Selezionare l'ufficio responsabile"
 
 #. Default: "Office"
 #: ./browser/vistaareacompensiview.pt:65
-#: ./browser/vistacompensoview.pt:48
-#: ./content/atcompenso.py:67
+#: ./browser/vistacompensoview.pt:58
+#: ./content/atcompenso.py:68
 msgid "office_label"
 msgstr "Ufficio"
 
@@ -161,17 +162,18 @@ msgstr "Lista degli uffici"
 msgid "office_list_description"
 msgstr "Elencare qui gli uffici per l'area corrente"
 
-#: ./content/atcompenso.py:163
+#: ./content/atcompenso.py:160
 msgid "other"
 msgstr "Altro"
 
 #. Default: "If you select other in the previous field, write here the value (max 60 characters)"
-#: ./content/atcompenso.py:57
+#: ./content/atcompenso.py:58
 msgid "other_norm_help"
 msgstr "Se si è scelto il valore altro nel campo precedente, indicare qui la normativa o il titolo (massimo 60 caratteri)"
 
 #. Default: "Other norm"
-#: ./content/atcompenso.py:56
+#: ./browser/vistacompensoview.pt:52
+#: ./content/atcompenso.py:57
 msgid "other_norm_label"
 msgstr "Altro"
 
@@ -181,13 +183,13 @@ msgid "relied_modality_description"
 msgstr "Elencare qui le modalità di affidamento"
 
 #. Default: "Specify the name of the charge of the procedure"
-#: ./content/atcompenso.py:76
+#: ./content/atcompenso.py:77
 msgid "responsible_help"
 msgstr "Specificare il nome del responsabile del procedimento"
 
 #. Default: "Charge of the procedure"
-#: ./browser/vistacompensoview.pt:54
-#: ./content/atcompenso.py:75
+#: ./browser/vistacompensoview.pt:64
+#: ./content/atcompenso.py:76
 msgid "responsible_label"
 msgstr "Responsabile del procedimento"
 
@@ -280,7 +282,7 @@ msgid "sZeroRecords"
 msgstr ""
 
 #. Default: "Name of the enterprise"
-#: ./content/atcompenso.py:102
+#: ./content/atcompenso.py:103
 msgid "title_label"
 msgstr "Nome dell'impresa"
 
@@ -313,8 +315,4 @@ msgstr "Attenzione!!!"
 #: ./viewlets/check_link.pt:6
 msgid "warning_message"
 msgstr "Attenzione, non sono stati inseriti link all'interno del compenso"
-
-#: ./validators.py:33
-msgid "wrong_value_error"
-msgstr "Il valore inserito non è corretto. Inserire una cifra con al più un separatore per i centesimi"
 
