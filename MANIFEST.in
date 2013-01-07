@@ -1,3 +1,5 @@
 recursive-include comuneimola *
 recursive-include docs *
+include *.rst
+include *.txt
 global-exclude *pyc
