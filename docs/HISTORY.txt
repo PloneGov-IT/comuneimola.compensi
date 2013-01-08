@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1 (unreleased)
+1.1 (2013-01-08)
 ----------------
 
 - cambiato il Manifest dal momento che non si includeva il README.rst negli egg [lucabel]
