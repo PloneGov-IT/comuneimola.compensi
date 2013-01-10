@@ -4,6 +4,7 @@ Changelog
 1.2 (unreleased)
 ----------------
 
+- Campo codice fiscale o partita iva obbligatorio [micmord]
 - Campo note da 400 caratteri: possibile utilizzo prodotto anche per
   LEGGE 6 novembre 2012 , n. 190 'anticorruzione' [micmord]
 - Ripristinata descrizione nella vista area compensi [micmord]
