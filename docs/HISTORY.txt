@@ -4,7 +4,7 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Ripristinata descrizione nella vista area compensi [micmord]
 
 
 1.1 (2013-01-08)

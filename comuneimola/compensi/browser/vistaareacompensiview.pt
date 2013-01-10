@@ -48,6 +48,7 @@
                                     toLocalizedTime nocall:context/@@plone/toLocalizedTime;">
 
             <h1 tal:content="here/Title" class="documentFirstHeading"/>
+            <div id="parent-fieldname-description" tal:content="here/Description" class="documentDescription"/>
 
             <div id="export_csv">
                 <a class="context"
