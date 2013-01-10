@@ -15,7 +15,7 @@ tests_require = ['zope.testing']
 
 setup(name='comuneimola.compensi',
       version=version,
-      description="Gestione Compensi per il comune di Imola",
+      description="Fees management for the town of Imola - Under Italian Law, the institutional websites of the cities shall contain a detailed list of the amounts of all the contracts (herein we will use the term \"fees\") drawn up with external professionals. This product implements Plone with two new custom archetypes, \"Fees Area\" and \"Fee\".",
       long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from

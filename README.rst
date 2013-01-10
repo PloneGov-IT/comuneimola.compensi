@@ -1,75 +1,69 @@
 comuneimola.compensi
 ====================
 
-Compatibilità
+Compatibility
 -------------
-Sono stati fatti test con:
+
+Tests have been made with:
+
  * Plone 3.3.5
  * Plone 4.2.1
 
-Note di installazione
----------------------
- * Se si installa il prodotto per usarlo con versioni di plone precedente alla 4 è necessario impostare nel buildout la versione di collective.js.datatables alla 1.9.
- * Le funzionalità di traduzione della tabella, mancanti in collective.js.datatables 1.9 sono state riportate nel pacchetto e messe sotto condizione Plone >= 4.
+Installation Notes
+------------------
+ * If you are installing the product for use with versions prior to plone 4, the version of collective.js.datatables in the buildout must be set to 1.9.
+ * The translation feature of the table, missing in collective.js.datatables 1.9 has been put in the package and under the condition Plone < 4.
 
-Funzionamento
--------------
-Una volta installato il prodotto è possibile aggiungere oggetti "Area compensi".
-Dentro a questi oggetti è possibile aggiungere oggetti compensi.
+Operation
+---------
+Once the product is installed you can add "Fees Area" objects. Inside these objects, you can add "Fees" objects.
 
-La visualizzazione dell'area è impostata per utilizzare come la vista con
-collective.js.datatables.
+The display area is set to use a view based on collective.js.datatables.
 
-E' presente un bottone che permette di scaricare il contenuto della tabella/cartella
-in formato csv.
+A button allows you to download the contents of the table / folder in csv format.
 
-Un manager dovrà creare l'area.
-E' consigliato aggiungere all'area delle portlet-cercatore per trovare i compensi
-privati e da revisionare, per comodità degli utenti autenticati.
+A manager must create the area. We suggest to add collection portlets to the area, to find private fees and the fees to be reviewed, for the convenience of authenticated users.
+
 
 Workflow
 --------
+As for the workflow of "Fee" objects, for now we decided to stay as close as possible to the simple publication wf of Plone.
 
-Per quello che riguarda il workflow degli oggetti "Compenso" per ora si decide di restare
-il più vicino possibile al simple pubblication wf di plone.
+The publisher of the document (Contributor role)
+ * can add an entry
+ * can add one or more links / attachments
+ * can not change private items belonging to other publishers
+ * may require the publication to any reviewer
+ * can publish directly
+ * once published:
 
-L'editore del documento (ruolo contributor)
- * può aggiungere una voce
- * può aggiungere uno o più link/allegati
- * non può modificare elementi privati appartenenti ad altri editori
- * può richiedere la pubblicazione al revisore
- * può pubblicare direttamente
- * una volta pubblicato:
+  * can no longer revoke the publication
+  * can not add / remove links / attachments.
 
-  * non può più revocare la pubblicazione
-  * non può aggiungere/togliere link/allegati.
+The Editor role given by sharing, takes the form of a proxy to work on the "fee" object.
 
+A Reviewer:
+ * may withdraw an item published to correct the data entered, or modify them limited to those data not affecting the effectiveness of the contract.
 
-Il ruolo Plone di Editor dato tramite lo sharing, assume le sembianze di un'operazione di delega a lavorare sul compenso.
+"Manager" and "Site Administrator" can do everything, but still they should be used just in cases when only a superuser can solve a specific situation. Only these two roles can perform actions to delete, rename, cut and paste "fees".
 
-Un revisore può:
- * può revocare un elemento pubblicato per una rettifica dei capi già inseriti oppure modifica degli stessi solo ove ininfluenti sulla efficacia dell'atto.
-
-"Manager" e "Amministratore del sito" potranno fare tutto, ma si intende usarli solo per momenti in cui non si può fare a meno di un superuser per la situazione.
-Solo utenti con questi due ruoli potranno eseguire azioni di cancella, rinomina, taglia-incolla
-
-Per applicare le azioni di workflow (manda in revisione, pubblicazione, torna indietro, ecc.) all'oggetto "Compenso" e agli allegati di tipo "Collegamento" (i "File" non hanno workflow proprio, sono pubblici ma seguono il workflow dell'oggetto contenitore) contenuti bisogna agire tramite la voce "Avanzate..." dal menu "Stato".
+To apply workflow actions (such as sending in revision and publication, back, etc..) to "fee" objects and its "Link" attachments (the "File" does not have any workflow, are public but follow the workflow of their container), you must use the "Advanced ..." function from the "state" menu.
 
 
-Crediti
+Credits
 -------
 
-Sviluppato dal `Comune di Imola`__
+Developed by the `City of Imola`__
 
-Il comune di Imola supporta `l'iniziativa PloneGov`__.
+The City of Imola supports the `PloneGov initiative`__.
 
 __ http://www.comune.imola.bo.it/
 __ http://www.plonegov.it/
 
 
-Autori
-------
-Il prodotto è stato sviluppato da RedTurtle Technology.
+Authors
+-------
+The product was developed by
 
 .. image:: http://www.redturtle.net/redturtle_banner.png
    :alt: RedTurtle Technology Site

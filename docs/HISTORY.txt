@@ -4,33 +4,35 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+ - README.rst translation.
 
 
 1.1 (2013-01-08)
 ----------------
 
-- cambiato il Manifest dal momento che non si includeva il README.rst negli egg [lucabel]
+- Change the manifest to include README.rst in the released egg [lucabel]
 
 
 1.0 (2012-12-19)
 ----------------
-- cambiato visualizzazione della cifra dell'importo: [lucabel]
-- cambiato nel dettaglio;
-- cambiato nell'area compensi;
-- cambiato il js per fare un confronto diverso;
-- nascosti gli elementi AT Compenso dalla NavTree [micmord]
-- aggiunto il campo 'nautura dell'importo' [lucabel]
-- aggiunto un validatore al campo per l'importo [lucabel]
-- aggiunto un validatore che controlla la coppia dei campi norma/altro [lucabel]
-- nascoste le date di pubblicazione e scadenza nel form di edit dei compensi [lucabel]
-- cambiata la vista del compenso per mostrare i due campi nuovi [lucabel]
-- aggiunti i campi nuovi all'export in csv [lucabel]
-- ora il creatore del documento lo pubblica [lucabel] 
-- aggiunta compatibilità con Plone 3.3.5 [lucabel]
-- aggiunto workflow personalizzato per AT Compenso [lucabel&mirco]
-- traduzioni italiane [mirco&lucabel]
-- inserito export in csv della tabella riassuntiva dei compensi [lucabel]
-- aggiunto l'AT Compenso e la relativa vista [mirco]
-- aggiunto l'AT Area Compenso e la relativa vista che utilizza js.datatables [lucabel]
+- change view for the amount of the fee: [lucabel]
+
+ * change on "fee" details;
+ * change on "fees area";
+ * change the javascript to sort with new visualization;
+
+- Hide "Fee" in the NavTree [micmord]
+- Add fields 'amount_type' [lucabel]
+- Add validator to amount field [lucabel]
+- Add validator for the fields norm/other_norm [lucabel]
+- Hide effectiveDate and expirationDate in the edit form [lucabel]
+- Some modification to the "Fee view" [lucabel]
+- Add new fields to the csv export [lucabel]
+- Allow to "Fee" owner to publish his "Fees" [lucabel] 
+- Add backward compatibility with Plone 3.3.5 [lucabel]
+- Add Custom Workflow for ATCompenso ("Fee type") [lucabel&mirco]
+- Add italian translation [mirco&lucabel]
+- Add csv export [lucabel]
+- Add AT Compenso ("Fee" type ) and his view [mirco]
+- Add AT Area Compenso ("Fees area") and his view [lucabel]
 - Initial release
