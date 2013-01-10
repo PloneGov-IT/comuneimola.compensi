@@ -94,7 +94,7 @@ ATCompensoSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         widget=atapi.TextAreaWidget(
             label=_(u'note_label', default=u'Note'),
             rows=4,
-            maxlength=256,
+            maxlength=400,
             ),
     ),
 

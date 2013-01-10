@@ -4,6 +4,8 @@ Changelog
 1.2 (unreleased)
 ----------------
 
+- Campo note da 400 caratteri: possibile utilizzo prodotto anche per
+  LEGGE 6 novembre 2012 , n. 190 'anticorruzione' [micmord]
 - Ripristinata descrizione nella vista area compensi [micmord]
 
 
