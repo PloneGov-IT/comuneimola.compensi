@@ -1,6 +1,12 @@
 comuneimola.compensi
 ====================
 
+Il prodotto è la risposta `PloneGovIt`__ all'articolo 18 del `D.L.83/2012`__: *amministrazione aperta*.
+
+__ http://www.plonegov.it/
+__ http://www.governo.it/backoffice/allegati/68456-7800.pdf
+
+
 Compatibilità
 -------------
 Sono stati fatti test con:
