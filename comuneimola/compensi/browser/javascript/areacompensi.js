@@ -36,6 +36,6 @@ jq(document).ready(function() {
     jq('#compensitable').dataTable({
         "sPaginationType": "full_numbers",
         "oLanguage": {"sUrl": "@@collective.js.datatables.translation"},
-        "aoColumns": [null, {"sType": "euro-ita"}, null, null, {"sType": "date-ita"} ]
+        "aoColumns": [null, null, {"sType": "euro-ita"}, null, null, {"sType": "date-ita"} ]
    });
 })

@@ -15,6 +15,7 @@ from comuneimola.compensi import compensiMessageFactory as _
 ATCompensoSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     atapi.StringField('fiscal_data',
         required=True,
+        searchable=True,
         widget=atapi.StringWidget(
             label=_(u'fiscal_data_label', default=u'Tax code or VAT number'),
             description=_(u'fiscal_data_help', default=u"Insert the tax code or the VAT number"),
