@@ -2,10 +2,11 @@
 * CSS per la vista area compensi
 */
 .areaCompensi h1.documentFirstHeading{
-	margin-bottom: 0.5em;
+margin-bottom: 0.5em;
 }
 
 .areaCompensi div#export_csv{
+	margin-top:1em;
 	margin-bottom: 1em;
 }
 

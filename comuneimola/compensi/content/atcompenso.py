@@ -14,10 +14,11 @@ from comuneimola.compensi import compensiMessageFactory as _
 
 ATCompensoSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     atapi.StringField('fiscal_data',
-        required=False,
+        required=True,
+        searchable=True,
         widget=atapi.StringWidget(
             label=_(u'fiscal_data_label', default=u'Tax code or VAT number'),
-            description=_(u'fiscal_data_help', default=u"Insert your tax code or your VAT number"),
+            description=_(u'fiscal_data_help', default=u"Insert the tax code or the VAT number"),
             size=60,
             ),
     ),
@@ -94,7 +95,7 @@ ATCompensoSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         widget=atapi.TextAreaWidget(
             label=_(u'note_label', default=u'Note'),
             rows=4,
-            maxlength=256,
+            maxlength=400,
             ),
     ),
 

@@ -48,6 +48,7 @@
                                     toLocalizedTime nocall:context/@@plone/toLocalizedTime;">
 
             <h1 tal:content="here/Title" class="documentFirstHeading"/>
+            <div id="parent-fieldname-description" tal:content="here/Description" class="documentDescription"/>
 
             <div id="export_csv">
                 <a class="context"
@@ -61,6 +62,7 @@
                 <thead>
                     <tr>
                        <th i18n:translate="compenso_title">Title</th>
+                       <th i18n:translate="fiscal_data_label">Fiscal Data</th>
                        <th><span tal:omit-tag="" i18n:translate="amount_label">Amount</span> (&euro;)</th>
                        <th i18n:translate="office_label">Office</th>
                        <th i18n:translate="award_procedures_label">Procedures for the award</th>
@@ -76,6 +78,7 @@
                                 <tal:title content="brain/Title"></tal:title>
                               </a>
                            </td>
+                           <td tal:content="brain/getFiscal_data">Fiscal Data</td>
                            <td class="moneyformat"
                                tal:define="amount python: view.get_money_format(brain.getAmount)">
                               <tal:amount tal:replace="amount">Amount</tal:amount>

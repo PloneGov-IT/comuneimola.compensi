@@ -113,10 +113,10 @@ msgstr "Se si imposta questa data l'elemento sarà visibile a partire da questa 
 msgid "export_csv_label"
 msgstr "Esportazione dei dati (CSV)"
 
-#. Default: "Insert your tax code or your VAT number"
+#. Default: "Insert the tax code or the VAT number"
 #: ./content/atcompenso.py:20
 msgid "fiscal_data_help"
-msgstr "Inserisci il tuo codice fiscale o la partita IVA"
+msgstr "Inserisci il codice fiscale o la partita IVA"
 
 #. Default: "Tax code or VAT number"
 #: ./content/atcompenso.py:19
