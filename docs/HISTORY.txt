@@ -5,7 +5,7 @@ Changelog
 ----------------
 - Fiscal data: required, searchable and visible [micmord]
 - Note field length by 400 character useful for Art.190/2012 [micmord]
-- Ripristinata descrizione nella vista area compensi [micmord]
+- Description field visible again [micmord]
 
 
 1.2 (2013-01-10)
