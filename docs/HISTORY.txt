@@ -3,16 +3,13 @@ Changelog
 
 1.2 (unreleased)
 ----------------
-
-- Campo codice fiscale o partita iva obbigatorio, indicizzato e visibile in tabella [micmord]
-- Campo note da 400 caratteri: possibile utilizzo prodotto anche per
-  LEGGE 6 novembre 2012 , n. 190 'anticorruzione' [micmord]
+- Fiscal data: required, searchable and visible [micmord]
+- Note field length by 400 character useful for Art.190/2012 [micmord]
 - Ripristinata descrizione nella vista area compensi [micmord]
 
 
 1.1 (2013-01-08)
 ----------------
-
 - cambiato il Manifest dal momento che non si includeva il README.rst negli egg [lucabel]
 
 
