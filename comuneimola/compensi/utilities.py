@@ -34,7 +34,7 @@ class MoneyFormat(object):
             if digits:
                 build(next())
             else:
-                build(0)
+                build('0')
             #build(next() if digits else '0')
         build(dp)
         if not digits:

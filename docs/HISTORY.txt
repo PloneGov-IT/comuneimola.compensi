@@ -6,6 +6,8 @@ Changelog
 - Fiscal data: required, searchable and visible [micmord]
 - Note field length by 400 character useful for Art.190/2012 [micmord]
 - Description field visible again [micmord]
+- Bugfix into the MoneyFormat class to permit of insert zero value into the amount field
+  (issue#3) [mircoangelini]
 
 
 1.2 (2013-01-10)
@@ -33,7 +35,7 @@ Changelog
 - Hide effectiveDate and expirationDate in the edit form [lucabel]
 - Some modification to the "Fee view" [lucabel]
 - Add new fields to the csv export [lucabel]
-- Allow to "Fee" owner to publish his "Fees" [lucabel] 
+- Allow to "Fee" owner to publish his "Fees" [lucabel]
 - Add backward compatibility with Plone 3.3.5 [lucabel]
 - Add Custom Workflow for ATCompenso ("Fee type") [lucabel&mirco]
 - Add italian translation [mirco&lucabel]
