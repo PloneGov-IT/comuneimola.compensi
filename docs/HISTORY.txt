@@ -3,6 +3,7 @@ Changelog
 
 1.3 (unreleased)
 ----------------
+- Fix wrong label in atcompenso [lucabel]
 - Fiscal data: required, searchable and visible [micmord]
 - Note field length by 400 character useful for Art.190/2012 [micmord]
 - Description field visible again [micmord]
