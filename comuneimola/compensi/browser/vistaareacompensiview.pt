@@ -62,7 +62,7 @@
                 <thead>
                     <tr>
                        <th i18n:translate="compenso_title">Title</th>
-                       <th i18n:translate="fiscal_data_label">Fiscal Data</th>
+                       <th i18n:translate="fiscal_data_label_view">Fiscal Data</th>
                        <th><span tal:omit-tag="" i18n:translate="amount_label">Amount</span> (&euro;)</th>
                        <th i18n:translate="office_label">Office</th>
                        <th i18n:translate="award_procedures_label">Procedures for the award</th>

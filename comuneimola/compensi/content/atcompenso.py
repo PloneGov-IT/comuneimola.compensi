@@ -101,7 +101,7 @@ ATCompensoSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 
 ))
 
-ATCompensoSchema['title'].widget.label = _(u'title_label', default=u'Name of the enterprise')
+ATCompensoSchema['title'].widget.label = _(u'title_label', default=u'Name of beneficiary')
 ATCompensoSchema['description'].widget.visible = False
 ATCompensoSchema['effectiveDate'].widget.description = _(u'effectiveDate_help', default=u'If you set this date the item will be visible starting from this date. If you do not insert the date the item will be published immediately with the action of publication.')
 ATCompensoSchema['effectiveDate'].widget.visible = {'edit': 'invisible', 'view': 'visible'}
